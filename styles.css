@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #6e2020;
     color: white;
     padding: 1em;
 }
@@ -37,7 +37,7 @@ header {
     display: inline-block;
     padding: 1em 2em;
     font-size: 1.2em;
-    background-color: #0056b3;
+    background-color: #c04e4e;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -45,7 +45,7 @@ header {
 }
 
 .button-container a:hover {
-    background-color: #003f80;
+    background-color: #ec7575;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
