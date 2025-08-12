@@ -47,3 +47,12 @@ header {
 .button-container a:hover {
     background-color: #003f80;
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.image-container img {
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1.5s ease forwards; /* Fade in over 1.5 seconds */
+}
