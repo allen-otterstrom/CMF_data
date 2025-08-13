@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    header {
+      background-color: #6e2020;
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 80px); /* adjust based on header height */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+
+  <iframe src="{{ page.map_url }}"></iframe>
+</body>
+</html>
