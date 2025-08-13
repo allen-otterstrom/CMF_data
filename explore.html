@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Census of Manufactures - Explore the data</title>
+  <title>Census of Manufactures - Explore the Data</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* Page-specific styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,33 +14,39 @@
       background-color: #fdfdfd;
       color: #222;
     }
+
     header {
       background-color: #6e2020; /* deep red */
       color: white;
       padding: 1.5em 0;
       text-align: center;
     }
-    header h2 {
+
+    header h1 {
       margin: 0;
       font-size: 2em;
-      color: inherit;
+      line-height: 1.2;
     }
+
     nav {
       margin-top: 0.5em;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 1em;
       font-weight: bold;
     }
+
     nav a:hover,
     nav a.active {
       text-decoration: underline;
     }
+
     iframe {
       width: 100%;
-      height: calc(100vh - 100px); /* adjust to match header height */
+      height: calc(100vh - 120px); /* adjust based on header height */
       border: none;
       display: block;
     }
@@ -48,12 +55,12 @@
 <body>
 
 <header>
-  <h2>Census of Manufactures</h2>
+  <h1>Census of Manufactures</h1>
   <nav>
     <a href="index.html">Home</a>
-    <a href="get-data.html">Get the data</a>
-    <a href="about.html">About the data</a>
-    <a href="explore.html" class="active">Explore the data</a>
+    <a href="get-data.html">Get the Data</a>
+    <a href="about.html">About the Data</a>
+    <a href="explore.html" class="active">Explore the Data</a>
   </nav>
 </header>
 
@@ -61,5 +68,3 @@
 
 </body>
 </html>
-
-
