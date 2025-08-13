@@ -9,7 +9,7 @@ title: Historical Census of Manufactures Microdata
 </div>
 
 <div class="button-container">
-  <a href="/get-data.html">Get the data</a>
-  <a href="/about.html">About the data</a>
-  <a href="/explore.html">Explore the data</a>
+  <a href="get-data.html">Get the data</a>
+  <a href="about.html">About the data</a>
+  <a href="explore.html">Explore the data</a>
 </div>
