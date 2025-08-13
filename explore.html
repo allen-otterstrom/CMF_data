@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Explore the Data</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Census of Manufactures - Explore the data</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body, html {
-      margin: 0; padding: 0; height: 100%;
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }
-    iframe {
-      border: none;
-      width: 100vw;
-      height: 100vh;
+    header {
+      background-color: #6e2020; /* deep red */
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      margin-top: 0.5em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2em auto 4em;
+      padding: 1em 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #6e2020;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    p {
+      margin: 1em 0;
+    }
+    .markdown-body img {
       display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      padding: 4px;
     }
   </style>
 </head>
 <body>
+
+<header>
+  <h1>Census of Manufactures</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="get-data.html">Get the data</a>
+    <a href="additional-data.html">About the data</a>
+    <a href="cmf-image-navigation.html">Explore the data</a>
+  </nav>
+</header>
+<body>
   <iframe src="https://bfi-com.vercel.app/"></iframe>
 </body>
 </html>
+
