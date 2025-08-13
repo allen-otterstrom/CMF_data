@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
+---
+layout: default
+---
 
-  <!-- Load your site-wide CSS -->
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  main {
+    height: calc(100vh - 80px); /* adjust for header height */
+    padding: 0;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+</style>
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    main {
-      height: calc(100vh - 80px); /* adjust if header height changes */
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-
-  {% include header.html %}
-
-  <main>
-    <iframe src="{{ page.map_url }}"></iframe>
-  </main>
-
-</body>
-</html>
+<iframe src="{{ page.map_url }}"></iframe>
