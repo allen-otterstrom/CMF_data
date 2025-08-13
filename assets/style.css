@@ -76,3 +76,8 @@ header {
 .button:hover {
   background-color: #0066cc;
 }
+
+.markdown-body {
+  text-align: left;
+}
+
