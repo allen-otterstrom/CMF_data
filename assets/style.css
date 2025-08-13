@@ -56,3 +56,23 @@ header {
   opacity: 0; /* Start hidden */
   animation: fadeIn 1.5s ease forwards; /* Fade in over 1.5 seconds */
 }
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0066cc;
+}
