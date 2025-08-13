@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Get the Data
+title: Additional Data
 ---
 
-# Download the Data
+# Additional Data
 
 <div class="button-grid">
   <a class="button" href="/CMF_data/raw_data.zip" download>Raw Data</a>
