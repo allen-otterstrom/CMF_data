@@ -8,11 +8,10 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #222;
       margin: 0;
       padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
     }
     header {
       background-color: #6e2020; /* deep red */
@@ -20,14 +19,9 @@
       padding: 1.5em 0;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
     header h2 {
       margin: 0;
       font-size: 2em;
-      color: inherit;
     }
     nav {
       margin-top: 0.5em;
@@ -38,50 +32,31 @@
       margin: 0 1em;
       font-weight: bold;
     }
-    nav a:hover {
+    nav a:hover,
+    nav a.active {
       text-decoration: underline;
     }
-    main {
-      max-width: 900px;
-      margin: 2em auto 4em;
-      padding: 1em 2em;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #6e2020;
-      text-align: center;
-      margin-bottom: 1em;
-    }
-    p {
-      margin: 1em 0;
-    }
-    .markdown-body img {
+    iframe {
+      width: 100%;
+      height: calc(100vh - 100px); /* adjust to match header height */
+      border: none;
       display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 15px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: #fff;
-      padding: 4px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h2>Census of Manufactures</h2>
+  <h1>Census of Manufactures</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="get-data.html">Get the data</a>
     <a href="about.html">About the data</a>
-    <a href="explore.html">Explore the data</a>
+    <a href="explore.html" class="active">Explore the data</a>
   </nav>
 </header>
+
 <iframe src="https://bfi-com.vercel.app/"></iframe>
+
 </body>
 </html>
-
-
