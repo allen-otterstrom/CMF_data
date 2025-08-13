@@ -1,23 +1,26 @@
----
-layout: default
----
-
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  main {
-    height: calc(100vh - 80px); /* adjust for header height */
-    padding: 0;
-  }
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-</style>
-
-<iframe src="{{ page.map_url }}"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 80px); /* adjust based on header height */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+  <iframe src="{{ page.map_url }}"></iframe>
+</body>
+</html>
