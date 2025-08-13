@@ -12,16 +12,24 @@
       height: 100%;
       overflow: hidden;
     }
+    main.markdown-body {
+      padding: 0;
+      margin: 0;
+      height: calc(100vh - 80px); /* adjust if header height changes */
+    }
     iframe {
       width: 100%;
-      height: calc(100vh - 80px); /* adjust based on header height */
+      height: 100%;
       border: none;
+      display: block;
     }
   </style>
 </head>
 <body>
   {% include header.html %}
 
-  <iframe src="{{ page.map_url }}"></iframe>
+  <main class="markdown-body">
+    <iframe src="{{ page.map_url }}"></iframe>
+  </main>
 </body>
 </html>
