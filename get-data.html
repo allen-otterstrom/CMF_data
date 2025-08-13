@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Get the Data - Historical Census of Manufactures Microdata</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Census of Manufactures - Get the Data</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Additional page-specific styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6e2020; /* deep red */
+      color: white;
+      padding: 1.5em 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      margin-top: 0.5em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     main {
       max-width: 900px;
       margin: 2em auto 4em;
-      padding: 0 1em;
-      font-family: Arial, sans-serif;
-      color: #222;
+      padding: 1em 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    h2 {
-      border-bottom: 3px solid #0056b3;
-      padding-bottom: 0.3em;
-      margin-top: 2em;
+    h1 {
+      color: #6e2020;
+      text-align: center;
       margin-bottom: 1em;
-      color: #003f80;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+    p {
+      margin: 1em 0;
     }
-    ul li {
-      margin-bottom: 0.8em;
-      font-size: 1.1em;
-    }
-    ul li a {
-      color: #0056b3;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.3s ease;
-    }
-    ul li a:hover {
-      border-color: #0056b3;
-    }
-    p.note {
-      margin-top: 0.2em;
-      font-size: 0.9em;
-      color: #555;
-    }
-    nav a {
-      color: #0056b3;
-      text-decoration: none;
-      font-weight: bold;
+    .markdown-body img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      padding: 4px;
     }
   </style>
 </head>
 <body>
+
 <header>
   <h1>Census of Manufactures</h1>
   <nav>
@@ -118,5 +133,6 @@
 <section id="data_structure">
   <h2><a href="data-structure.html">Data Structure</a></h2>
 </section>
+
 
 
