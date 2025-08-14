@@ -43,7 +43,7 @@ The resulting datasets enable researchers to analyze industrial change, geograph
 </div>
 
 <div>
-  <a href="FAQs" class="button">FAQs</a>  
+  <a href="faqs" class="button">FAQs</a>  
   Common questions and important notes about limitations.
 </div>
 
