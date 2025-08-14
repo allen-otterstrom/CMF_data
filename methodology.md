@@ -43,7 +43,7 @@ To assess coverage, the team compared the total number of establishments in the 
 
 ## Data Transcription
 
-Once images were split, organized, renamed, and metadata gathered, the transcription process began. Images and Excel batches with column names reflecting the original column names on the manuscripts were given to a data team to be transcribed. Each item was double transcribed by two different associates, with a third resolving any differences. In total, there were 65,211 manuscript images with manufacturing establishments, including 28,506 pages from 1880. The average page had 7 establishments. When we have records for a state and decade, the records are normally complete for the entire state. For some states and decades, there are some entire counties missing or parts of counties from comparing our establishment totals to the published county-level tabulations (see the explanation of [coverage](3_collection_vocerage.html)).
+Once images were split, organized, renamed, and metadata gathered, the transcription process began. Images and Excel batches with column names reflecting the original column names on the manuscripts were given to a data team to be transcribed. Each item was double transcribed by two different associates, with a third resolving any differences. In total, there were 65,211 manuscript images with manufacturing establishments, including 28,506 pages from 1880. The average page had 7 establishments. When we have records for a state and decade, the records are normally complete for the entire state. For some states and decades, there are some entire counties missing or parts of counties from comparing our establishment totals to the published county-level tabulations (see the explanation of [coverage](coverage.html)).
 
 ## Raw Data Processing and Cleaning
 
@@ -63,4 +63,5 @@ In addition to these manual steps, many algorithmic and other cleaning steps per
 6. [Power and Machine Cleaning](methodology_sub/6_power_machine_cleaning.html)
 7. [Standardize 1880](methodology_sub/7_standardize_1880.html)
 8. [Numeric Variable Cleaning](methodology_sub/8_variable_cleaning.html)
+
 
