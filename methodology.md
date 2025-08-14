@@ -55,7 +55,7 @@ Some values for string variables were entered in the "wrong place", when the sur
 
 In addition to these manual steps, many algorithmic and other cleaning steps performed through code were required to get the data into a usable state. The entire set of cleaning and preparation steps that take the data from its raw entered form to its current state are outlined below.
 
-1. [Manual Steps](methodology_sub/1_manual_cleaning.html)
+1. [Manual Steps](1_manual_cleaning.html)
 2. [String Cleaning](methodology_sub/2_string_cleaning.html)
 3. [Reshape](methodology_sub/3_reshape.html)
 4. [County Assignment](methodology_sub/4_county_assignment.html)
@@ -63,5 +63,6 @@ In addition to these manual steps, many algorithmic and other cleaning steps per
 6. [Power and Machine Cleaning](methodology_sub/6_power_machine_cleaning.html)
 7. [Standardize 1880](methodology_sub/7_standardize_1880.html)
 8. [Numeric Variable Cleaning](methodology_sub/8_variable_cleaning.html)
+
 
 
