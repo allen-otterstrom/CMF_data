@@ -7,7 +7,7 @@ title: Coverage
 
 The Census of Manufacturers data from 1850 to 1880 is rich and detailed, but it does not cover all manufacturing establishments in the United States. There are two main reasons for this:
 
-- **500 dollar minimum threshold**: Only establishments producing at least $500 worth of goods were included, leaving out smaller manufacturers. As a result, we don't know the total number of manufacturing establishments during these years.
+- **500 dollar minimum threshold**: Only establishments producing at least $500 worth of goods were included, leaving out smaller manufacturers. These smaller businesses were included in the Agriculture Census as home manufacturing, so in principle we know the number of businesses, but they are not included in these Data.
 
 - **Missing manuscripts**: Many original records have been lost over the past 140+ years. This is especially significant for 1880:
   
@@ -24,4 +24,5 @@ At the time each census was completed, all manuscripts were gathered by the Cens
 ![coverage table](https://dl.dropboxusercontent.com/scl/fi/rwnlqmbbcsauh65ne83k1/coverage_table.png?rlkey=m33c0il8yhx4h1qk6eh5ob7ck&st=h2k13ffk&dl=0)
 
 This table shows our coverage of counties. Percents indicate estimates of the share of establishments that we digitized, given the published county-level tabulations. In 1850, the Census records for three counties in California (Contra Costa, San Francisco, and Santa Clara) were lost and never tabulated, we have complete coverage of the remaining counties in California. Dashes indicate that no survey was conducted, checkmarks indicate that we have complete coverage.
+
 
