@@ -4,8 +4,8 @@ title: Historical Census of Manufactures Microdata
 ---
 
 <div class="image-container">
-  <img src="/CMF_data/Belchers.jpg" alt="Historical photo 1">
-  <img src="/CMF_data/belchers_sheet.png" alt="Historical photo 2">
+  <img src="/CMF_data/assets/images/Belchers.jpg" alt="Historical photo 1">
+  <img src="/CMF_data/assets/images/belchers_sheet.png" alt="Historical photo 2">
 </div>
 
 <div class="button-container">
