@@ -7,7 +7,7 @@ title: About the Data
 
 Below is a modern state-boundary map showing which states have **total coverage** vs **partial coverage** in our dataset.
 
-![Coverage Map](/assets/images/coverage-map.png)
+![Coverage Map](/assets/images/simple_coverage_map.png)
 
 ---
 
