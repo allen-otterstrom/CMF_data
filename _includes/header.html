@@ -1,5 +1,8 @@
-<header>
-  <h1>Census of Manufactures</h1>
+<header style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="display: flex; align-items: center;">
+    <img src="{{ '/assets/images/favicon.png' | relative_url }}" alt="Site Logo" style="height:32px; width:32px; margin-right: 10px;">
+    <h1>Census of Manufactures</h1>
+  </div>
   <nav>
     <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
     <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
@@ -7,6 +10,7 @@
     <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Map</a>
   </nav>
 </header>
+
 
 <style>
 header {
