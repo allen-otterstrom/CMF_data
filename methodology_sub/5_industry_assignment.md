@@ -1,3 +1,7 @@
+---
+layout: default
+title: Industry Classification
+---
 # Industry Classification
 
 This step in the pipeline standardizes the industry classifications for all establishments across the Census of Manufactures from 1850 to 1880. Originally, industry information was recorded in inconsistent and often ambiguous text entries (e.g., “mill,” “cabinet,” or “bootmaker”), which made analysis across years and locations difficult. This step addresses that by cleaning the original text strings, matching them to standardized industry categories using crosswalks, and assigning each firm a set of consistent industry labels. These include both detailed and broader classifications that allow users to group establishments according to the level of industry specificity needed for their analysis.
@@ -13,3 +17,4 @@ The process begins by cleaning raw industry labels and matching them to cleaned 
 [code-support1](https://dl.dropboxusercontent.com/scl/fi/roaacaisowhgxg6xmp5ig/industry_raw_clean.do?rlkey=u4g8kwezsitvv428c57ftwupl&dl=0)
 
 [code-support2](https://dl.dropboxusercontent.com/scl/fi/opjct87bnralezpn19r9n/infer_industry_classification.do?rlkey=z4tjtkj1dvpxql65venrblv0c&dl=0)
+
