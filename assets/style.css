@@ -45,7 +45,7 @@ header {
 }
 
 .button-container a:hover {
-    background-color: #8c2929;
+    background-color: #bd3737;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -74,7 +74,7 @@ header {
 }
 
 .button:hover {
-  background-color: #8c2929;
+  background-color: #bd3737;
 }
 
 .markdown-body {
