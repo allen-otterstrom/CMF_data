@@ -1,3 +1,8 @@
+---
+layout: default
+title: Power and Machine Cleaning
+---
+
 # Power Machine Cleaning
 
 This step of the data pipeline focuses on identifying the type of power used by each manufacturing establishment—such as steam, water, wind, or animal power. Because firms often described their power sources inconsistently or used different terms for the same thing, this step involves carefully cleaning and categorizing those entries. The process uses a standardized mapping file to translate raw power-related text into consistent categories. These are then used to create binary indicators (yes/no flags) for each type of power source a firm may have used.
@@ -13,3 +18,4 @@ Once the power types are cleaned and classified, the process also extracts any i
 
 
  
+
