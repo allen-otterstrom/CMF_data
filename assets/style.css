@@ -76,6 +76,54 @@ header {
 .button:hover {
   background-color: #bd3737;
 }
+/* Only apply to the main page */
+body.index-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body.index-page > .fullpage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body.index-page header {
+    background-color: #6e2020;
+    color: white;
+    padding: 1em;
+    flex-shrink: 0;
+}
+
+body.index-page .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+}
+
+body.index-page .image-container img {
+    max-width: 45%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+body.index-page .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+    margin: 1em 0;
+}
 
 .markdown-body {
   text-align: left;
