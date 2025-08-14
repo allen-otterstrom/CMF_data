@@ -1,3 +1,8 @@
+---
+layout: default
+title: Manual Checking
+---
+
 # Manual Checking
 
 The CMF data are very rich, but the irregularites present in original source are such that many things had to be manually checked and fixed. Manually made crosswalks and similar tools were used in the later pipeline, but these four steps were overwhelmingly accomplished by undergraduate research assisntants and associates at DDD, and thus are considered to be manual steps.
@@ -76,3 +81,4 @@ The CMF data are very rich, but the irregularites present in original source are
        ```
      
      - RA's then went through and determined which of these duplicates to drop.
+
