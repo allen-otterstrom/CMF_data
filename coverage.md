@@ -1,3 +1,8 @@
+---
+layout: default
+title: Coverage
+---
+
 # Establishment Level Data Coverage
 
 The Census of Manufacturers data from 1850 to 1880 is rich and detailed, but it does not cover all manufacturing establishments in the United States. There are two main reasons for this:
@@ -19,3 +24,4 @@ At the time each census was completed, all manuscripts were gathered by the Cens
 ![coverage table](https://dl.dropboxusercontent.com/scl/fi/rwnlqmbbcsauh65ne83k1/coverage_table.png?rlkey=m33c0il8yhx4h1qk6eh5ob7ck&st=h2k13ffk&dl=0)
 
 This table shows our coverage of counties. Percents indicate estimates of the share of establishments that we digitized, given the published county-level tabulations. In 1850, the Census records for three counties in California (Contra Costa, San Francisco, and Santa Clara) were lost and never tabulated, we have complete coverage of the remaining counties in California. Dashes indicate that no survey was conducted, checkmarks indicate that we have complete coverage.
+
