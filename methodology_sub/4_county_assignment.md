@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Additional Data
+title: County Assignment
 ---
 
 # County Assignment
@@ -12,4 +12,5 @@ The process is divided into two major parts. First, the county names are extract
 [code-step1](https://dl.dropboxusercontent.com/scl/fi/a24wclvba9nkcc74o1ngu/1_county_assignment.do?rlkey=dyj7e43yzxmbjcu24mgmfooe0&dl=0)
 
 [code-step2](https://dl.dropboxusercontent.com/scl/fi/859h42q04cjimpbdvak9k/2_merge_fips.do?rlkey=t2iux4pxvjdm8ah5zg9h1p2rg&dl=0)
+
 
