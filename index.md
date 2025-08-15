@@ -31,12 +31,28 @@ body.page-index .container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: flex-start;
 }
 
+/* Smaller image size */
 .home-images img {
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+/* Delay for second image */
+.home-images img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Button styles */
@@ -66,6 +82,10 @@ body.page-index .container {
 @media (max-width: 768px) {
   .home-content {
     flex-direction: column;
+    align-items: center;
+  }
+  .home-images img {
+    width: 80%;
   }
 }
 </style>
