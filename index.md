@@ -81,7 +81,7 @@ body.page-index .container {
 }
 
 .home-images img {
-  width: 90%;
+  width: 60%;
   height: auto;
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
