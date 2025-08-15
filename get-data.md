@@ -30,10 +30,13 @@ title: Get the Data
 <br><br>
 <button class="button" onclick="downloadSelectedFile()">Download</button>
 
+<br><br>
+<a class="button" href="codebook.pdf" download>Download Codebook</a>
+
 # Example Images
 
 <label for="images-dropdown"><strong>Select Image:</strong></label>
-<select id="images-dropdown" onchange="updateSelectedFile(this.value)">
+<select id="images-dropdown" onchange="openImageModal(this.value)">
   <option value="">-- Choose an image --</option>
   <option value="images/photo1.jpg">1850 Manuscript Image</option>
   <option value="images/photo2.jpg">1860 Manuscript Image</option>
@@ -53,9 +56,6 @@ title: Get the Data
   <option value="images/photo16.jpg">1880 Special Schedule 12 Image</option>
 </select>
 
-<span id="selected-image" style="margin-left: 10px; font-weight: bold;">No image selected</span>
-<br><br>
-<button class="button" onclick="downloadSelectedImage()">Download Image</button>
 
 # Additional Links
 
@@ -108,28 +108,6 @@ function downloadSelectedImage() {
 }
 </script>
 
-# Example Images
-
-<label for="images-dropdown"><strong>Select Image:</strong></label>
-<select id="images-dropdown" onchange="openImageModal(this.value)">
-  <option value="">-- Choose an image --</option>
-  <option value="images/photo1.jpg">1850 Manuscript Image</option>
-  <option value="images/photo2.jpg">1860 Manuscript Image</option>
-  <option value="images/photo3.jpg">1870 Manuscript Image</option>
-  <option value="images/photo4.jpg">1880 General Schedule Image</option>
-  <option value="images/photo5.jpg">1880 Special Schedule 1 Image</option>
-  <option value="images/photo6.jpg">1880 Special Schedule 2 Image</option>
-  <option value="images/photo7.jpg">1880 Special Schedule 3 Image</option>
-  <option value="images/photo8.jpg">1880 Special Schedule 4 Image</option>
-  <option value="images/photo9.jpg">1880 Special Schedule 5 Image</option>
-  <option value="images/photo10.jpg">1880 Special Schedule 6 Image</option>
-  <option value="images/photo11.jpg">1880 Special Schedule 7 Image</option>
-  <option value="images/photo12.jpg">1880 Special Schedule 8 Image</option>
-  <option value="images/photo13.jpg">1880 Special Schedule 9 Image</option>
-  <option value="images/photo14.jpg">1880 Special Schedule 10 Image</option>
-  <option value="images/photo15.jpg">1880 Special Schedule 11 Image</option>
-  <option value="images/photo16.jpg">1880 Special Schedule 12 Image</option>
-</select>
 
 <!-- The Modal -->
 <div id="imageModal" class="modal">
