@@ -5,46 +5,53 @@ title: Get the Data
 
 # Download the Data
 
-<div class="button-grid">
-  <a class="button" href="#" target="_blank">1850</a>
-  <a class="button" href="#" target="_blank">1860</a>
-  <a class="button" href="#" target="_blank">1870</a>
-  <a class="button" href="#" target="_blank">1880 General Schedule</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 1</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 2</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 3</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 4</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 5</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 6</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 7</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 8</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 9</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 10</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 11</a>
-  <a class="button" href="#" target="_blank">1880 Special Schedule 12</a>
-  <a class="button" href="codebook.pdf" target="_blank">Codebook</a>
-</div>
+<label for="data-dropdown"><strong>Select Year / Schedule:</strong></label>
+<select id="data-dropdown" onchange="downloadFile(this.value)">
+  <option value="">-- Choose a file --</option>
+  <option value="1850.csv">1850</option>
+  <option value="1860.csv">1860</option>
+  <option value="1870.csv">1870</option>
+  <option value="1880_general.csv">1880 General Schedule</option>
+  <option value="1880_special1.csv">1880 Special Schedule 1</option>
+  <option value="1880_special2.csv">1880 Special Schedule 2</option>
+  <option value="1880_special3.csv">1880 Special Schedule 3</option>
+  <option value="1880_special4.csv">1880 Special Schedule 4</option>
+  <option value="1880_special5.csv">1880 Special Schedule 5</option>
+  <option value="1880_special6.csv">1880 Special Schedule 6</option>
+  <option value="1880_special7.csv">1880 Special Schedule 7</option>
+  <option value="1880_special8.csv">1880 Special Schedule 8</option>
+  <option value="1880_special9.csv">1880 Special Schedule 9</option>
+  <option value="1880_special10.csv">1880 Special Schedule 10</option>
+  <option value="1880_special11.csv">1880 Special Schedule 11</option>
+  <option value="1880_special12.csv">1880 Special Schedule 12</option>
+</select>
+
+<!-- Codebook button right under the dropdown -->
+<br><br>
+<a class="button" href="codebook.pdf" download>Download Codebook</a>
 
 # Example Images
 
-<div class="button-grid">
-  <a class="button" href="images/photo1.jpg" target="_blank">1850 Manuscript Image</a>
-  <a class="button" href="images/photo2.jpg" target="_blank">1860 Manuscript Image</a>
-  <a class="button" href="images/photo3.jpg" target="_blank">1870 Manuscript Image</a>
-  <a class="button" href="images/photo4.jpg" target="_blank">1880 General Schedule Image</a>
-  <a class="button" href="images/photo5.jpg" target="_blank">1880 Special Schedule 1 Image</a>
-  <a class="button" href="images/photo6.jpg" target="_blank">1880 Special Schedule 2 Image</a>
-  <a class="button" href="images/photo7.jpg" target="_blank">1880 Special Schedule 3 Image</a>
-  <a class="button" href="images/photo8.jpg" target="_blank">1880 Special Schedule 4 Image</a>
-  <a class="button" href="images/photo9.jpg" target="_blank">1880 Special Schedule 5 Image</a>
-  <a class="button" href="images/photo10.jpg" target="_blank">1880 Special Schedule 6 Image</a>
-  <a class="button" href="images/photo11.jpg" target="_blank">1880 Special Schedule 7 Image</a>
-  <a class="button" href="images/photo12.jpg" target="_blank">1880 Special Schedule 8 Image</a>
-  <a class="button" href="images/photo13.jpg" target="_blank">1880 Special Schedule 9 Image</a>
-  <a class="button" href="images/photo14.jpg" target="_blank">1880 Special Schedule 10 Image</a>
-  <a class="button" href="images/photo15.jpg" target="_blank">1880 Special Schedule 11 Image</a>
-  <a class="button" href="images/photo16.jpg" target="_blank">1880 Special Schedule 12 Image</a>
-</div>
+<label for="images-dropdown"><strong>Select Image:</strong></label>
+<select id="images-dropdown" onchange="downloadFile(this.value)">
+  <option value="">-- Choose an image --</option>
+  <option value="images/photo1.jpg">1850 Manuscript Image</option>
+  <option value="images/photo2.jpg">1860 Manuscript Image</option>
+  <option value="images/photo3.jpg">1870 Manuscript Image</option>
+  <option value="images/photo4.jpg">1880 General Schedule Image</option>
+  <option value="images/photo5.jpg">1880 Special Schedule 1 Image</option>
+  <option value="images/photo6.jpg">1880 Special Schedule 2 Image</option>
+  <option value="images/photo7.jpg">1880 Special Schedule 3 Image</option>
+  <option value="images/photo8.jpg">1880 Special Schedule 4 Image</option>
+  <option value="images/photo9.jpg">1880 Special Schedule 5 Image</option>
+  <option value="images/photo10.jpg">1880 Special Schedule 6 Image</option>
+  <option value="images/photo11.jpg">1880 Special Schedule 7 Image</option>
+  <option value="images/photo12.jpg">1880 Special Schedule 8 Image</option>
+  <option value="images/photo13.jpg">1880 Special Schedule 9 Image</option>
+  <option value="images/photo14.jpg">1880 Special Schedule 10 Image</option>
+  <option value="images/photo15.jpg">1880 Special Schedule 11 Image</option>
+  <option value="images/photo16.jpg">1880 Special Schedule 12 Image</option>
+</select>
 
 # Additional Links
 
@@ -53,3 +60,15 @@ title: Get the Data
   <a class="button" href="navigation.html">Navigation</a>
   <a class="button" href="data-structure.html">Data Structure</a>
 </div>
+
+<script>
+function downloadFile(fileUrl) {
+  if (!fileUrl) return;
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.download = fileUrl.split('/').pop(); // suggested filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
