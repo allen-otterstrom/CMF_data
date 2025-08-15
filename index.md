@@ -1,8 +1,3 @@
----
-layout: default
-title: Historical Census of Manufactures Microdata
----
-
 <style>
 /* Remove box background only for index page */
 body.page-index main,
@@ -17,79 +12,91 @@ body.page-index .container {
 /* Two-column layout */
 .home-content {
   display: flex;
-  align-items: center; /* vertically center both columns */
-  gap: 0; /* no gap — clean split */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center of both halves */
   padding: 2rem;
   height: calc(100vh - 120px); /* adjust for banner height */
 }
 
-/* Left and right columns take up equal space */
+/* Columns */
 .home-text, .home-images {
   flex: 0 0 50%;
   max-width: 50%;
   display: flex;
+  justify-content: center; /* center block in column */
+  align-items: center;
+}
+
+/* Text block */
+.text-block {
+  display: flex;
   flex-direction: column;
-  align-items: center; /* horizontally center inside the column */
-  justify-content: center; /* vertically center inside the column */
-}
-
-/* Text column */
-.home-text {
+  justify-content: space-evenly; /* evenly space heading, paragraph, buttons */
+  align-items: center;
   text-align: center;
-  padding: 1rem;
-  max-width: 90%; /* so it doesn’t stretch too wide */
+  width: 80%; /* fixed width inside column */
+  height: 70%; /* gives vertical spacing room */
 }
 
-/* Right image column */
-.home-images {
-  gap: 1.5rem;
+/* Heading + paragraph */
+.text-block h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+.text-block p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
-/* Bigger image size + fade-in */
-.home-images img {
-  width: 90%; /* bigger images */
-  height: auto;
-  object-fit: cover;
-  opacity: 0;
-  animation: fadeIn 1.2s ease-in forwards;
-}
-
-.home-images img:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Buttons */
+/* Button container */
 .button-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* more vertical spacing */
-  margin-top: 2rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
+/* Bigger buttons */
 .button-container a {
   display: block;
-  padding: 1rem 1.5rem; /* taller buttons */
+  padding: 1.5rem; /* much taller */
   background: #4a6fa5;
   color: white;
   text-decoration: none;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* larger text */
 }
 
 .button-container a:hover {
   background: #3c5a85;
 }
 
-/* Stack columns on smaller screens */
+/* Images */
+.home-images {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-images img {
+  width: 90%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+.home-images img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .home-content {
     flex-direction: column;
@@ -100,6 +107,10 @@ body.page-index .container {
     max-width: 100%;
     flex: 1;
   }
+  .text-block {
+    width: 90%;
+    height: auto;
+  }
   .home-images img {
     width: 80%;
   }
@@ -108,15 +119,17 @@ body.page-index .container {
 
 <div class="home-content">
   <div class="home-text">
-    <h3>Welcome to the Census of Manufactures Historical Data Portal</h3>
-    <p>
-      This site provides access to newly digitized, detailed manufacturing data from the U.S. Census of Manufactures, spanning the mid-19th century.
-      Here you’ll find cleaned and structured datasets, documentation of coverage and methodology, and tools for exploring county- and industry-level patterns over time.
-    </p>
-    <div class="button-container">
-      <a href="get-data.html">Get the data</a>
-      <a href="about.html">About the data</a>
-      <a href="explore.html">Explore the data</a>
+    <div class="text-block">
+      <h3>Welcome to the Census of Manufactures Historical Data Portal</h3>
+      <p>
+        This site provides access to newly digitized, detailed manufacturing data from the U.S. Census of Manufactures, spanning the mid-19th century.
+        Here you’ll find cleaned and structured datasets, documentation of coverage and methodology, and tools for exploring county- and industry-level patterns over time.
+      </p>
+      <div class="button-container">
+        <a href="get-data.html">Get the data</a>
+        <a href="about.html">About the data</a>
+        <a href="explore.html">Explore the data</a>
+      </div>
     </div>
   </div>
 
