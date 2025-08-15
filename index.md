@@ -17,32 +17,37 @@ body.page-index .container {
 /* Two-column layout */
 .home-content {
   display: flex;
-  align-items: flex-start;
-  gap: 3rem;
+  align-items: center; /* vertically center both columns */
+  gap: 0; /* no gap — clean split */
   padding: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
+  height: calc(100vh - 120px); /* adjust for banner height */
 }
 
-/* Left text column */
+/* Left and right columns take up equal space */
+.home-text, .home-images {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally center inside the column */
+  justify-content: center; /* vertically center inside the column */
+}
+
+/* Text column */
 .home-text {
-  flex: 0 0 40%;
-  max-width: 40%;
+  text-align: center;
+  padding: 1rem;
+  max-width: 90%; /* so it doesn’t stretch too wide */
 }
 
 /* Right image column */
 .home-images {
-  flex: 0 0 60%;
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
-  align-items: center; /* center horizontally */
 }
 
-/* Smaller image size and fade-in */
+/* Bigger image size + fade-in */
 .home-images img {
-  width: 70%;
+  width: 90%; /* bigger images */
   height: auto;
   object-fit: cover;
   opacity: 0;
@@ -88,8 +93,7 @@ body.page-index .container {
 @media (max-width: 768px) {
   .home-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    height: auto;
   }
   .home-text,
   .home-images {
