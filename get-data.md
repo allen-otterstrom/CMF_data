@@ -26,9 +26,10 @@ title: Get the Data
   <option value="1880_special12.csv">1880 Special Schedule 12</option>
 </select>
 
-<span id="selected-file" style="margin-left: 10px; font-weight: bold;">No file selected</span>
+<!-- Selected file name and download button -->
+<span id="selected-file" style="margin-left: 15px; font-weight: bold; font-size: 1.2em;">No file selected</span>
 <br><br>
-<button class="button" onclick="downloadSelectedFile()">Download</button>
+<a id="download-button" class="button" href="#" onclick="downloadSelectedFile()">Download Selected File</a>
 
 <br><br>
 <a class="button" href="codebook.pdf" download>Download Codebook</a>
@@ -108,6 +109,28 @@ function downloadSelectedImage() {
 }
 </script>
 
+<script>
+let selectedFile = "";
+
+function updateSelectedFile(fileUrl) {
+  const dropdown = document.getElementById('data-dropdown');
+  selectedFile = dropdown.value;
+  document.getElementById('selected-file').textContent = selectedFile || "No file selected";
+}
+
+function downloadSelectedFile() {
+  if (!selectedFile) {
+    alert("Please select a file to download.");
+    return;
+  }
+  const link = document.createElement('a');
+  link.href = selectedFile;
+  link.download = selectedFile.split('/').pop();
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
 
 <!-- The Modal -->
 <div id="imageModal" class="modal">
