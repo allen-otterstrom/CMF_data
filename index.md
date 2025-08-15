@@ -18,32 +18,37 @@ body.page-index .container {
 .home-content {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 3rem;
   padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/* Left text column */
 .home-text {
-  flex: 1;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 
+/* Right image column */
 .home-images {
-  flex: 1;
+  flex: 0 0 60%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start;
+  gap: 1.5rem;
+  align-items: center; /* center horizontally */
 }
 
-/* Smaller image size */
+/* Smaller image size and fade-in */
 .home-images img {
-  width: 60%;
+  width: 70%;
   height: auto;
   object-fit: cover;
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
 }
 
-/* Delay for second image */
 .home-images img:nth-child(2) {
   animation-delay: 0.4s;
 }
@@ -55,23 +60,24 @@ body.page-index .container {
   }
 }
 
-/* Button styles */
+/* Buttons */
 .button-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 1.5rem; /* more vertical spacing */
+  margin-top: 2rem;
 }
 
 .button-container a {
   display: block;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.5rem; /* taller buttons */
   background: #4a6fa5;
   color: white;
   text-decoration: none;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .button-container a:hover {
@@ -83,6 +89,12 @@ body.page-index .container {
   .home-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .home-text,
+  .home-images {
+    max-width: 100%;
+    flex: 1;
   }
   .home-images img {
     width: 80%;
