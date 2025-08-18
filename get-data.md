@@ -8,6 +8,7 @@ title: Get the Data
 <label for="data-dropdown"><strong>Select Year / Schedule:</strong></label>
 <select id="data-dropdown" onchange="updateSelectedFile(this.value)">
   <option value="">-- Choose a file --</option>
+  <option value="all_appended.csv">All Data</option>
   <option value="1850.csv">1850</option>
   <option value="1860.csv">1860</option>
   <option value="1870.csv">1870</option>
@@ -62,8 +63,8 @@ title: Get the Data
 
 <div class="button-grid">
   <a class="button" href="additional-data.html">Additional Data</a>
-  <a class="button" href="navigation.html">Navigation</a>
-  <a class="button" href="data-structure.html">Data Structure</a>
+  <a class="button" href="navigation.html">CMF Manuscript Navigation</a>
+  <a class="button" href="data-structure.html">CMF Data Structure</a>
 </div>
 
 <script>
