@@ -107,32 +107,24 @@ function downloadSelectedFile() {
   width: 100%; 
   height: 100%; 
   background-color: rgba(0,0,0,0.9);
-  text-align: center;
+
+  display: flex;           /* make it a flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  flex-direction: column;  /* stack caption below image */
 }
 
 .modal-content {
-  margin-top: 5vh;
   max-width: 90%;
-  max-height: 90vh;
+  max-height: 80vh; /* slightly smaller to give padding above/below */
   border-radius: 8px;
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 #caption {
-  margin: auto;
-  display: block;
+  margin-top: 10px;
   text-align: center;
   color: white;
-  padding: 10px 0;
+  font-size: 1.1em;
 }
 </style>
 
