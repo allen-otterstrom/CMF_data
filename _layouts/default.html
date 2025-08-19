@@ -51,9 +51,12 @@
   {{ content }}
 </main>
 
+{% if page.url != "/CMF_data" %}
 <div style="text-align: center; margin-top: 2em;">
   <a class="back-link" href="javascript:window.history.back();">← Back</a>
 </div>
+{% endif %}
+
   
 </body>
 <body class="{% if page.url == '/' %}page-index{% endif %}">
