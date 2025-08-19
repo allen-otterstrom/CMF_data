@@ -53,7 +53,6 @@ title: Get the Data
   <option value="/CMF_data/assets/images/1880_ss1112_CMF_coalquarry.jpg">1880 Special Schedulea 11 & 12 Image</option>
 </select>
 
-
 # Additional Links
 
 <div class="button-grid">
@@ -64,14 +63,15 @@ title: Get the Data
 </div>
 
 <script>
+/* ---- Data dropdown: show label, download URL ---- */
 let selectedFile = "";
 let selectedFileLabel = "";
 
-function updateSelectedFile(fileUrl) {
+function updateSelectedFile() {
   const dropdown = document.getElementById('data-dropdown');
   const selectedOption = dropdown.options[dropdown.selectedIndex];
-  selectedFile = selectedOption.value;      // still store the URL for downloading
-  selectedFileLabel = selectedOption.text;  // store the label for display
+  selectedFile = selectedOption.value;
+  selectedFileLabel = selectedOption.text;
   document.getElementById('selected-file').textContent = selectedFileLabel || "No file selected";
 }
 
@@ -92,73 +92,96 @@ function downloadSelectedFile() {
 <!-- The Modal -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeImageModal()">&times;</span>
-  <img class="modal-content" id="modalImg">
+  <img class="modal-content" id="modalImg" alt="">
   <div id="caption"></div>
 </div>
 
 <style>
-/* Modal styles */
+/* Centered, full-screen modal */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1000; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
+  display: none;                /* hidden by default */
+  position: fixed;
+  inset: 0;                     /* top/right/bottom/left: 0 */
+  z-index: 1000;
   background-color: rgba(0,0,0,0.9);
+  display: flex;                /* use flex to center content */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;       /* image on top, caption below */
   text-align: center;
 }
 
+/* Big image, but stays inside viewport */
 .modal-content {
-  margin-top: 5vh;
   max-width: 90%;
   max-height: 90vh;
   border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+/* Close button */
 .close {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: white;
+  color: #fff;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
 }
 
+/* Caption under image */
 #caption {
-  margin: auto;
-  display: block;
-  text-align: center;
-  color: white;
-  padding: 10px 0;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 1.05em;
 }
 </style>
 
 <script>
-function openImageModal(src) {
+/* ---- Image modal: show label text, center, preload, easy close ---- */
+function openImageModal() {
+  const dropdown = document.getElementById("images-dropdown");
+  const opt = dropdown.options[dropdown.selectedIndex];
+  const src = opt.value;
+  const label = opt.text;
+
   if (!src) return;
-  var modal = document.getElementById("imageModal");
-  var modalImg = document.getElementById("modalImg");
-  var caption = document.getElementById("caption");
-  modal.style.display = "block";
+
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const caption = document.getElementById("caption");
+
   modalImg.src = src;
-  caption.textContent = src.split('/').pop();
+  caption.textContent = label;            // show label, not filename
+  modal.style.display = "flex";
 }
 
 function closeImageModal() {
-  var modal = document.getElementById("imageModal");
-  modal.style.display = "none";
+  document.getElementById("imageModal").style.display = "none";
 }
 
-// Preload all images from dropdown
+/* Close when clicking backdrop */
+document.getElementById("imageModal").addEventListener("click", function(e) {
+  if (e.target === this) closeImageModal();
+});
+
+/* ESC to close */
+document.addEventListener("keydown", function(e) {
+  const modal = document.getElementById("imageModal");
+  if (modal.style.display === "flex" && e.key === "Escape") {
+    closeImageModal();
+  }
+});
+
+/* Preload all images from the dropdown */
 window.addEventListener("load", function() {
   const dropdown = document.getElementById("images-dropdown");
   for (let i = 0; i < dropdown.options.length; i++) {
-    if (dropdown.options[i].value) {
+    const url = dropdown.options[i].value;
+    if (url) {
       const img = new Image();
-      img.src = dropdown.options[i].value;
+      img.src = url;
     }
   }
 });
