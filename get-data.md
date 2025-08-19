@@ -38,7 +38,7 @@ title: Get the Data
 # Example Images
 
 <label for="images-dropdown"><strong>Select Image:</strong></label>
-<select id="images-dropdown" onchange="openImageModal(this.value)">
+<select id="images-dropdown" onchange="openImageModal()">
   <option value="">-- Choose an image --</option>
   <option value="/CMF_data/assets/images/1850_CMF.jpg">1850 Manuscript Image</option>
   <option value="/CMF_data/assets/images/1860_CMF.jpg">1860 Manuscript Image</option>
