@@ -38,7 +38,7 @@ title: Get the Data
 # Example Images
 
 <label for="images-dropdown"><strong>Select Image:</strong></label>
-<select id="images-dropdown" onchange="openImageModal()">
+<select id="images-dropdown" onchange="openImageModal(this.value)">
   <option value="">-- Choose an image --</option>
   <option value="/CMF_data/assets/images/1850_CMF.jpg">1850 Manuscript Image</option>
   <option value="/CMF_data/assets/images/1860_CMF.jpg">1860 Manuscript Image</option>
@@ -99,26 +99,27 @@ function downloadSelectedFile() {
 <style>
 /* Centered, full-screen modal */
 .modal {
-  display: none; /* start hidden */
+  display: none;                /* hidden by default */
   position: fixed;
+  inset: 0;                     /* top/right/bottom/left: 0 */
   z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0,0,0,0.9);
-
-  display: flex;           /* flex container */
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+  display: flex;                /* use flex to center content */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;       /* image on top, caption below */
+  text-align: center;
 }
 
+/* Big image, but stays inside viewport */
 .modal-content {
   max-width: 90%;
-  max-height: 80%;
+  max-height: 90vh;
   border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+/* Close button */
 .close {
   position: absolute;
   top: 15px;
@@ -129,58 +130,30 @@ function downloadSelectedFile() {
   cursor: pointer;
 }
 
+/* Caption under image */
 #caption {
-  position: absolute;
-  bottom: 30px;
+  margin-top: 12px;
   color: #fff;
   font-size: 1.05em;
-  text-align: center;
-  width: 100%;
 }
 </style>
 
 <script>
-/* ---- Data dropdown: show label, download URL ---- */
-let selectedFile = "";
-let selectedFileLabel = "";
-
-function updateSelectedFile() {
-  const dropdown = document.getElementById('data-dropdown');
-  const selectedOption = dropdown.options[dropdown.selectedIndex];
-  selectedFile = selectedOption.value;
-  selectedFileLabel = selectedOption.text;
-  document.getElementById('selected-file').textContent = selectedFileLabel || "No file selected";
-}
-
-function downloadSelectedFile() {
-  if (!selectedFile) {
-    alert("Please select a file to download.");
-    return;
-  }
-  const link = document.createElement('a');
-  link.href = selectedFile;
-  link.download = selectedFile.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
 /* ---- Image modal: show label text, center, preload, easy close ---- */
 function openImageModal() {
   const dropdown = document.getElementById("images-dropdown");
   const opt = dropdown.options[dropdown.selectedIndex];
   const src = opt.value;
-
-  // Exit if no image selected
-  if (!src || src === "") return;
-
   const label = opt.text;
+
+  if (!src) return;
+
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const caption = document.getElementById("caption");
 
   modalImg.src = src;
-  caption.textContent = label;
+  caption.textContent = label;            // show label, not filename
   modal.style.display = "flex";
 }
 
@@ -201,12 +174,9 @@ document.addEventListener("keydown", function(e) {
   }
 });
 
-/* Attach change event to dropdown after DOM loaded */
-window.addEventListener("DOMContentLoaded", function() {
+/* Preload all images from the dropdown */
+window.addEventListener("load", function() {
   const dropdown = document.getElementById("images-dropdown");
-  dropdown.addEventListener("change", openImageModal);
-
-  // Preload all images
   for (let i = 0; i < dropdown.options.length; i++) {
     const url = dropdown.options[i].value;
     if (url) {
@@ -216,4 +186,3 @@ window.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
-
