@@ -98,28 +98,27 @@ function downloadSelectedFile() {
 
 <style>
 /* Centered, full-screen modal */
-/* Modal container - hidden by default */
 .modal {
-  display: none; /* ✅ start hidden */
+  display: none; /* start hidden */
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0,0,0,0.9);
-  text-align: center;
+
+  display: flex;           /* flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
 }
 
-/* Modal content (image) */
 .modal-content {
-  margin-top: 5%;
   max-width: 90%;
   max-height: 80%;
+  border-radius: 8px;
 }
 
-/* Close button */
 .close {
   position: absolute;
   top: 15px;
@@ -130,11 +129,13 @@ function downloadSelectedFile() {
   cursor: pointer;
 }
 
-/* Caption under image */
 #caption {
-  margin-top: 12px;
+  position: absolute;
+  bottom: 30px;
   color: #fff;
   font-size: 1.05em;
+  text-align: center;
+  width: 100%;
 }
 </style>
 
