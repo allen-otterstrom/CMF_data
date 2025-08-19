@@ -9,22 +9,22 @@ title: Get the Data
 <select id="data-dropdown" onchange="updateSelectedFile(this.value)">
   <option value="">-- Choose a file --</option>
   <option value="all_appended.csv">All Data</option>
-  <option value="1850.csv">1850</option>
-  <option value="1860.csv">1860</option>
-  <option value="1870.csv">1870</option>
-  <option value="1880_general.csv">1880 General Schedule</option>
-  <option value="1880_special1.csv">1880 Special Schedule 1</option>
-  <option value="1880_special2.csv">1880 Special Schedule 2</option>
-  <option value="1880_special3.csv">1880 Special Schedule 3</option>
-  <option value="1880_special4.csv">1880 Special Schedule 4</option>
-  <option value="1880_special5.csv">1880 Special Schedule 5</option>
-  <option value="1880_special6.csv">1880 Special Schedule 6</option>
-  <option value="1880_special7.csv">1880 Special Schedule 7</option>
-  <option value="1880_special8.csv">1880 Special Schedule 8</option>
-  <option value="1880_special9.csv">1880 Special Schedule 9</option>
-  <option value="1880_special10.csv">1880 Special Schedule 10</option>
-  <option value="1880_special11.csv">1880 Special Schedule 11</option>
-  <option value="1880_special12.csv">1880 Special Schedule 12</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1850.csv">1850</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1860.csv">1860</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1870.csv">1870</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_general_schedule.csv">1880 General Schedule</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss1.csv">1880 Special Schedule 1</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss2.csv">1880 Special Schedule 2</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss3.csv">1880 Special Schedule 3</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss4.csv">1880 Special Schedule 4</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss5.csv">1880 Special Schedule 5</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss6.csv">1880 Special Schedule 6</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss7.csv">1880 Special Schedule 7</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss8.csv">1880 Special Schedule 8</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss9.csv">1880 Special Schedule 9</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss10.csv">1880 Special Schedule 10</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss11.csv">1880 Special Schedule 11</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss12.csv">1880 Special Schedule 12</option>
 </select>
 
 <!-- Selected file name and download button -->
@@ -40,22 +40,17 @@ title: Get the Data
 <label for="images-dropdown"><strong>Select Image:</strong></label>
 <select id="images-dropdown" onchange="openImageModal(this.value)">
   <option value="">-- Choose an image --</option>
-  <option value="images/photo1.jpg">1850 Manuscript Image</option>
-  <option value="images/photo2.jpg">1860 Manuscript Image</option>
-  <option value="images/photo3.jpg">1870 Manuscript Image</option>
-  <option value="images/photo4.jpg">1880 General Schedule Image</option>
-  <option value="images/photo5.jpg">1880 Special Schedule 1 Image</option>
-  <option value="images/photo6.jpg">1880 Special Schedule 2 Image</option>
-  <option value="images/photo7.jpg">1880 Special Schedule 3 Image</option>
-  <option value="images/photo8.jpg">1880 Special Schedule 4 Image</option>
-  <option value="images/photo9.jpg">1880 Special Schedule 5 Image</option>
-  <option value="images/photo10.jpg">1880 Special Schedule 6 Image</option>
-  <option value="images/photo11.jpg">1880 Special Schedule 7 Image</option>
-  <option value="images/photo12.jpg">1880 Special Schedule 8 Image</option>
-  <option value="images/photo13.jpg">1880 Special Schedule 9 Image</option>
-  <option value="images/photo14.jpg">1880 Special Schedule 10 Image</option>
-  <option value="images/photo15.jpg">1880 Special Schedule 11 Image</option>
-  <option value="images/photo16.jpg">1880 Special Schedule 12 Image</option>
+  <option value="/CMF_data/assets/images/1850_CMF.jpg">1850 Manuscript Image</option>
+  <option value="/CMF_data/assets/images/1860_CMF.jpg">1860 Manuscript Image</option>
+  <option value="/CMF_data/assets/images/1870_CMF.jpg">1870 Manuscript Image</option>
+  <option value="/CMF_data/assets/images/1880_gss_CMF.jpg">1880 General Schedule Image</option>
+  <option value="/CMF_data/assets/images/1880_ss1_CMF_agimp.jpg">1880 Special Schedule 1 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss2_CMF_paper.jpg">1880 Special Schedule 2 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss34_CMF_bootsleather.jpg">1880 Special Schedules 3 & 4 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss56_CMF_lumberbrick.jpg">1880 Special Schedules 5 & 6 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss78_CMF_flourcheese.jpg">1880 Special Schedules 7 & 8 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss910_CMF_meatsalt.jpg">1880 Special Schedules 9 & 10 Image</option>
+  <option value="/CMF_data/assets/images/1880_ss1112_CMF_coalquarry.jpg">1880 Special Schedulea 11 & 12 Image</option>
 </select>
 
 
