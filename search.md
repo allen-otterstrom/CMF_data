@@ -27,15 +27,13 @@ document.getElementById("searchBox").addEventListener("input", async function(e)
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = "";
 
-  if (query.length < 2) {
-    return; // wait until at least 2 characters typed
-  }
+  if (query.length < 2) return; 
 
-  await loadImages(); // only fetch once
+  await loadImages(); // fetch JSON once
 
   const matches = images
     .filter(img => img.filename.toLowerCase().includes(query))
-    .slice(0, 20); // limit results
+    .slice(0, 50); // limit results
 
   if (matches.length === 0) {
     resultsDiv.textContent = "No matches found.";
@@ -43,27 +41,13 @@ document.getElementById("searchBox").addEventListener("input", async function(e)
   }
 
   matches.forEach(img => {
-    const wrapper = document.createElement("div");
-    wrapper.style.marginBottom = "0.8em";
-
     const link = document.createElement("a");
     link.href = img.url;
     link.textContent = img.filename;
     link.target = "_blank";
     link.style.display = "block";
-    link.style.fontWeight = "bold";
-
-    wrapper.appendChild(link);
-
-    // Optional: small preview thumbnail
-    const thumb = document.createElement("img");
-    thumb.src = img.url;
-    thumb.alt = img.filename;
-    thumb.style.maxWidth = "300px";
-    thumb.style.marginTop = "0.3em";
-    wrapper.appendChild(thumb);
-
-    resultsDiv.appendChild(wrapper);
+    link.style.marginBottom = "0.5em";
+    resultsDiv.appendChild(link);
   });
 });
 </script>
