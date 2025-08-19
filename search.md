@@ -17,7 +17,7 @@ let images = null; // will hold the JSON once loaded
 
 async function loadImages() {
   if (!images) {
-    const response = await fetch("/assets/image_links.json");  // adjust path if needed
+    const response = await fetch("assets/image_links.json");  // adjust path if needed
     images = await response.json();
   }
 }
