@@ -33,18 +33,6 @@ title: Additional Data
   gap: 1em; /* space between button and description */
 }
 
-.button {
-  padding: 0.6em 1em;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
 .description {
   font-size: 0.95em;
   color: #333;
