@@ -20,6 +20,7 @@ title: Additional Data
   </div>
 </div>
 
+<style>
 .button-grid {
   display: flex;
   flex-direction: column;
@@ -48,3 +49,4 @@ title: Additional Data
   font-size: 0.95em;
   color: #333;
 }
+</style>
