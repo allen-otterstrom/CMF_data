@@ -140,6 +140,31 @@ function downloadSelectedFile() {
 </style>
 
 <script>
+/* ---- Data dropdown: show label, download URL ---- */
+let selectedFile = "";
+let selectedFileLabel = "";
+
+function updateSelectedFile() {
+  const dropdown = document.getElementById('data-dropdown');
+  const selectedOption = dropdown.options[dropdown.selectedIndex];
+  selectedFile = selectedOption.value;
+  selectedFileLabel = selectedOption.text;
+  document.getElementById('selected-file').textContent = selectedFileLabel || "No file selected";
+}
+
+function downloadSelectedFile() {
+  if (!selectedFile) {
+    alert("Please select a file to download.");
+    return;
+  }
+  const link = document.createElement('a');
+  link.href = selectedFile;
+  link.download = selectedFile.split('/').pop();
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 /* ---- Image modal: show label text, center, preload, easy close ---- */
 function openImageModal() {
   const dropdown = document.getElementById("images-dropdown");
@@ -147,7 +172,7 @@ function openImageModal() {
   const src = opt.value;
 
   // Exit if no image selected
-  if (!src) return;
+  if (!src || src === "") return;
 
   const label = opt.text;
   const modal = document.getElementById("imageModal");
@@ -158,7 +183,6 @@ function openImageModal() {
   caption.textContent = label;
   modal.style.display = "flex";
 }
-
 
 function closeImageModal() {
   document.getElementById("imageModal").style.display = "none";
@@ -177,9 +201,12 @@ document.addEventListener("keydown", function(e) {
   }
 });
 
-/* Preload all images from the dropdown */
-window.addEventListener("load", function() {
+/* Attach change event to dropdown after DOM loaded */
+window.addEventListener("DOMContentLoaded", function() {
   const dropdown = document.getElementById("images-dropdown");
+  dropdown.addEventListener("change", openImageModal);
+
+  // Preload all images
   for (let i = 0; i < dropdown.options.length; i++) {
     const url = dropdown.options[i].value;
     if (url) {
@@ -189,3 +216,4 @@ window.addEventListener("load", function() {
   }
 });
 </script>
+
