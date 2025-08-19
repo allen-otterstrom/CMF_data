@@ -68,6 +68,12 @@ title: Get the Data
   <a class="button" href="search.html">CMF Images</a>
 </div>
 
+<div style="text-align: center; margin-top: 2em;">
+  <a href="javascript:window.history.back();" style="text-decoration: none; font-size: 1em; color: inherit; cursor: pointer;">
+    ← Back
+  </a>
+</div>
+
 <script>
 let selectedFile = "";
 let selectedImage = "";
