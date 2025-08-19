@@ -65,54 +65,14 @@ title: Get the Data
 
 <script>
 let selectedFile = "";
-let selectedImage = "";
+let selectedFileLabel = "";
 
 function updateSelectedFile(fileUrl) {
   const dropdown = document.getElementById('data-dropdown');
-  selectedFile = dropdown.value;
-  document.getElementById('selected-file').textContent = selectedFile || "No file selected";
-}
-
-function updateSelectedImage(fileUrl) {
-  const dropdown = document.getElementById('images-dropdown');
-  selectedImage = dropdown.value;
-  document.getElementById('selected-image').textContent = selectedImage || "No image selected";
-}
-
-function downloadSelectedFile() {
-  if (!selectedFile) {
-    alert("Please select a file to download.");
-    return;
-  }
-  const link = document.createElement('a');
-  link.href = selectedFile;
-  link.download = selectedFile.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
-function downloadSelectedImage() {
-  if (!selectedImage) {
-    alert("Please select an image to download.");
-    return;
-  }
-  const link = document.createElement('a');
-  link.href = selectedImage;
-  link.download = selectedImage.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-</script>
-
-<script>
-let selectedFile = "";
-
-function updateSelectedFile(fileUrl) {
-  const dropdown = document.getElementById('data-dropdown');
-  selectedFile = dropdown.value;
-  document.getElementById('selected-file').textContent = selectedFile || "No file selected";
+  const selectedOption = dropdown.options[dropdown.selectedIndex];
+  selectedFile = selectedOption.value;      // still store the URL for downloading
+  selectedFileLabel = selectedOption.text;  // store the label for display
+  document.getElementById('selected-file').textContent = selectedFileLabel || "No file selected";
 }
 
 function downloadSelectedFile() {
@@ -142,20 +102,18 @@ function downloadSelectedFile() {
   display: none; 
   position: fixed; 
   z-index: 1000; 
-  padding-top: 60px; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
+  margin-top: 5vh;
   max-width: 90%;
-  max-height: 80%;
+  max-height: 90vh;
   border-radius: 8px;
 }
 
@@ -193,4 +151,15 @@ function closeImageModal() {
   var modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
+
+// Preload all images from dropdown
+window.addEventListener("load", function() {
+  const dropdown = document.getElementById("images-dropdown");
+  for (let i = 0; i < dropdown.options.length; i++) {
+    if (dropdown.options[i].value) {
+      const img = new Image();
+      img.src = dropdown.options[i].value;
+    }
+  }
+});
 </script>
