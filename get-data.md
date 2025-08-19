@@ -145,18 +145,20 @@ function openImageModal() {
   const dropdown = document.getElementById("images-dropdown");
   const opt = dropdown.options[dropdown.selectedIndex];
   const src = opt.value;
-  const label = opt.text;
 
+  // Exit if no image selected
   if (!src) return;
 
+  const label = opt.text;
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const caption = document.getElementById("caption");
 
   modalImg.src = src;
-  caption.textContent = label;            // show label, not filename
+  caption.textContent = label;
   modal.style.display = "flex";
 }
+
 
 function closeImageModal() {
   document.getElementById("imageModal").style.display = "none";
