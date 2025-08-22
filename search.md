@@ -5,7 +5,7 @@ title: Image Search
 
 # Search Census Manuscript Images
 
-Type part of a filename, state, year, or industry (e.g., `PA steel`) to find an image.  
+Type part of a filename, state, year, or industry (e.g., Pennsylvania Steel) to find an image.  
 The list will appear below with links to the full-size scans.
 
 <input type="text" id="searchBox" placeholder="Search for an image..." style="width: 100%; padding: 0.6em; font-size: 1em; margin-top: 1em;">
@@ -65,7 +65,7 @@ document.getElementById("searchBox").addEventListener("input", async function(e)
   matches.forEach(img => {
     const link = document.createElement("a");
     link.href = img.url;
-    link.textContent = `${img.filename} (${img.state_long}, ${img.year}) - ${img.industries}`;
+  link.textContent = img.filename;
     link.target = "_blank";
     link.style.display = "block";
     link.style.marginBottom = "0.5em";
