@@ -1,5 +1,5 @@
 ---
-layout: map
+layout: default
 title: Who We Are
 ---
 
