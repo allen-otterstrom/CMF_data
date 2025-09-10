@@ -79,11 +79,14 @@ Gaining Steam: Technology Diffusion with Recurring Lock-in,” with Shanon Hsuan
     </p>
   </div>
 
-  <div>
-    <h3 style="margin-top: 0;">Using our work?</h3>
-    <p>
-      Tell us about your published work using data from the Manufacturing Census project.
-    </p>
-  </div>
+<div>
+  <h3 style="margin-top: 0;">Using our work?</h3>
+  <p>
+    Tell us about your published work using data from the Manufacturing Census project:
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnGwH3z64n4ck8sF0yQbGQUwrt-S1MDtV4U3d1qEEPgfac4w/viewform?usp=sharing&ouid=112347190599054824465" target="_blank">
+    Submit Here
+  </a>
+</div>
 
 </div>
