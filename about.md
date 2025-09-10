@@ -13,6 +13,10 @@ The resulting datasets enable researchers to analyze industrial change, geograph
 - Study the effects of transportation, energy, and policy on industrial growth.
 - Link micro-level CMF records to other historical datasets.
 
+Click the following link to download a PDF of the complete set of documentation for this project:
+<br><br>
+<a class="button" href="master_documentation.pdf" download>Download Documentation</a>
+
 ---
 
 ## Coverage Map
@@ -56,7 +60,11 @@ Below is a modern state-boundary map showing which states have **complete covera
     <a href="change-log" class="button">Change Log</a>
     <span>Ongoing record of dataset revisions.</span>
   </div>
-
+  
+  <div style="display: flex; align-items: center; gap: 1em;">
+    <a href="add-on" class="button">Contribute!</a>
+    <span>Submit your own work with the CMF data and browse other add-ons.</span>
+  </div>
 </div>
 ---
 
