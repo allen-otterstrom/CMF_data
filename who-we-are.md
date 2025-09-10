@@ -101,12 +101,13 @@ title: Who We Are
   </div>
 </div>
 
-# Current Full-Time and Graduate Research Team
+# Current Full-Time and Graduate Student Research Team
 - Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
 - Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
 
-# Former Full-Time and Graduate Research Team
-- Samuel Abers  
+# Former Full-Time and Graduate Student Research Team
+- Samuel Abers
+- Shanon Hsuan-Ming Hsu
 - Jiaxuan Lu  
 - Bo-Yu Chen  
 - Vivian Li  
@@ -157,6 +158,8 @@ title: Who We Are
 - Digital Divide Data (DDD)
 
 # Acknowledgments
-- BFI
-- NSF
-- Uchicago
+- Becker Friedman Institute
+- National Science Foundation
+- Initiative on Global Markets at the University of Chicago Booth School of Business
+- Neubauer Family Faculty Fellowship
+- NBER Innovation Policy grant program
