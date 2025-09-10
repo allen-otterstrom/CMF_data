@@ -70,6 +70,8 @@ title: Who We Are
     columns: 4;          
     -webkit-columns: 4;  
     -moz-columns: 4;     
+    list-style-position: inside; /* keep bullets aligned */
+    padding-left: 20px;  /* spacing for bullets */
   }
 </style>
 
@@ -116,42 +118,40 @@ title: Who We Are
 - Andrea Cerrato  
 
 # Part-time Research Assistants
-<div class="multi-col-4">
-
-- Paul Wang  
-- Tony Li  
-- Uday Malik  
-- Howard Li  
-- Eric Zhu  
-- Elliot Lin  
-- Alexandra Zhou  
-- Chenhao Yu  
-- Cynthia Ji  
-- David Kirchenbauer  
-- Ding Ding  
-- Eugenia Huang  
-- Evelyn Nie  
-- Jizhou Wang  
-- Kuitai Wang  
-- Leann Lee  
-- Risa Takashima  
-- Adrianna Nehme  
-- Annie Liu  
-- Astrid Ouyang  
-- Cheresa Turek  
-- Clara Ee  
-- Jihee You  
-- Joyce Wang  
-- Kathy Yao  
-- Mona Khairy  
-- Nathan Unah  
-- Neel Lahiri  
-- Polly Ren  
-- Scarlett Li  
-- Tony Brooks  
-- Yuerong Zhuang  
-
-</div>
+<ul class="multi-col-4">
+  <li>Paul Wang</li>
+  <li>Tony Li</li>
+  <li>Uday Malik</li>
+  <li>Howard Li</li>
+  <li>Eric Zhu</li>
+  <li>Elliot Lin</li>
+  <li>Alexandra Zhou</li>
+  <li>Chenhao Yu</li>
+  <li>Cynthia Ji</li>
+  <li>David Kirchenbauer</li>
+  <li>Ding Ding</li>
+  <li>Eugenia Huang</li>
+  <li>Evelyn Nie</li>
+  <li>Jizhou Wang</li>
+  <li>Kuitai Wang</li>
+  <li>Leann Lee</li>
+  <li>Risa Takashima</li>
+  <li>Adrianna Nehme</li>
+  <li>Annie Liu</li>
+  <li>Astrid Ouyang</li>
+  <li>Cheresa Turek</li>
+  <li>Clara Ee</li>
+  <li>Jihee You</li>
+  <li>Joyce Wang</li>
+  <li>Kathy Yao</li>
+  <li>Mona Khairy</li>
+  <li>Nathan Unah</li>
+  <li>Neel Lahiri</li>
+  <li>Polly Ren</li>
+  <li>Scarlett Li</li>
+  <li>Tony Brooks</li>
+  <li>Yuerong Zhuang</li>
+</ul>
 
 # Additional Support
 - Digital Divide Data (DDD)
