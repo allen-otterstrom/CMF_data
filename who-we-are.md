@@ -79,7 +79,22 @@ title: Who We Are
 </div>
 
 # Current Full-Time and Graduate Research Team
+- Allen Otterstrom
+- Benjamin Lualdi
 # Former Full-Time and Graduate Research Team
+- Samuel Abers
+- Jiaxuan Lu
+- Bo-Yu Chen
+- Vivian Li
+- Ali Doxey
+- Natalie Yang
+- Will Cockriel
+- Julius Luettge
+- Andrea Cerrato
 # Part-time Research Assistants
 # Additional Support
+We are very grateful to the associates at Digital Divide Data (DDD)
 # Acknowledgments
+- BFI
+- NSF
+- Uchicago
