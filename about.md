@@ -63,7 +63,7 @@ Below is a modern state-boundary map showing which states have **complete covera
   
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="add-on" class="button">Contribute!</a>
-    <span>Submit your own work with the CMF data and browse other add-ons.</span>
+    <span>Submit your data packages that contribute to the core dataset and browse other add-ons.</span>
   </div>
 </div>
 ---
