@@ -66,7 +66,8 @@ Below is a modern state-boundary map showing which states have **complete covera
     <h3 style="margin-top: 0;">Citation</h3>
     <p>
       Publications using any data from this website should cite the following paper:
-“Gaining Steam: Technology Diffusion with Recurring Lock-in,” with Shanon Hsuan-Ming Hsu, Anders Humlum, and Martin Rotemberg, September 2025. Revised and resubmitted, Journal of Political Economy. Online Appendix.
+      
+“Gaining Steam: Technology Diffusion with Recurring Lock-in,” with Shanon Hsuan-Ming Hsu, Anders Humlum, and Martin Rotemberg, September 2025. Revised and resubmitted, Journal of Political Economy.
     </p>
   </div>
 
