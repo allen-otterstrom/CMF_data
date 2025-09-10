@@ -90,8 +90,6 @@ title: Who We Are
 - Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
 
 # Former Full-Time and Graduate Research Team
-<div class="multi-col">
-
 - Samuel Abers  
 - Jiaxuan Lu  
 - Bo-Yu Chen  
@@ -103,44 +101,41 @@ title: Who We Are
 - Julius Luettge  
 - Andrea Cerrato  
 
-</div>
-
 # Part-time Research Assistants
 <div class="multi-col">
 
-- Paul Wang  
-- Tony Li  
-- Uday Malik  
-- Howard Li  
-- Eric Zhu  
-- Elliot Lin  
-- Alexandra Zhou  
-- Chenhao Yu  
-- Cynthia Ji  
-- David Kirchenbauer  
-- Ding Ding  
-- Eugenia Huang  
-- Evelyn Nie  
-- Jizhou Wang  
-- Kuitai Wang  
-- Leann Lee  
-- Risa Takashima  
-- Adrianna Nehme  
-- Annie Liu  
-- Astrid Ouyang  
-- Cheresa Turek  
-- Clara Ee  
-- Jihee You  
-- Joyce Wang  
-- Kathy Yao  
-- Mona Khairy  
-- Nathan Unah  
-- Neel Lahiri  
-- Polly Ren  
-- Scarlett Li  
-- Tony Brooks  
-- Yuerong Zhuang  
-
+Paul Wang  
+Tony Li  
+Uday Malik  
+Howard Li  
+Eric Zhu  
+Elliot Lin  
+Alexandra Zhou  
+Chenhao Yu  
+Cynthia Ji  
+David Kirchenbauer  
+Ding Ding  
+Eugenia Huang  
+Evelyn Nie  
+Jizhou Wang  
+Kuitai Wang  
+Leann Lee  
+Risa Takashima  
+Adrianna Nehme  
+Annie Liu
+Astrid Ouyang  
+Cheresa Turek  
+Clara Ee  
+Jihee You  
+Joyce Wang  
+Kathy Yao  
+Mona Khairy  
+Nathan Unah  
+Neel Lahiri  
+Polly Ren  
+Scarlett Li  
+Tony Brooks  
+Yuerong Zhuang  
 </div>
 
 # Additional Support
