@@ -8,24 +8,24 @@ title: Who We Are
 <div style="display: flex; flex-wrap: wrap; gap: 30px;">
 
   <div style="flex: 1 1 200px; max-width: 220px; text-align: center;">
-    <img src="/assets/images/pi1.jpg" alt="PI 1" 
+    <img src="/assets/images/richard_hornbeck_portrait.jpg" alt="PI 1" 
          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-    <p style="margin: 10px 0 5px 0; font-weight: bold;">Dr. Jane Smith</p>
-    <a href="https://janesmith.com" target="_blank">Website</a>
+    <p style="margin: 10px 0 5px 0; font-weight: bold;">Richard Hornbeck</p>
+    <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Website</a>
   </div>
 
   <div style="flex: 1 1 200px; max-width: 220px; text-align: center;">
-    <img src="/assets/images/pi2.jpg" alt="PI 2" 
+    <img src="/assets/images/anders_humlum_portrait.webp" alt="PI 2" 
          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-    <p style="margin: 10px 0 5px 0; font-weight: bold;">Dr. John Doe</p>
-    <a href="https://johndoe.com" target="_blank">Website</a>
+    <p style="margin: 10px 0 5px 0; font-weight: bold;">Anders Humlum</p>
+    <a href="https://www.andershumlum.com/" target="_blank">Website</a>
   </div>
 
   <div style="flex: 1 1 200px; max-width: 220px; text-align: center;">
-    <img src="/assets/images/pi3.jpg" alt="PI 3" 
+    <img src="/assets/images/martin_rotemberg_portrait.jpeg" alt="PI 3" 
          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-    <p style="margin: 10px 0 5px 0; font-weight: bold;">Dr. Alex Johnson</p>
-    <a href="https://alexjohnson.com" target="_blank">Website</a>
+    <p style="margin: 10px 0 5px 0; font-weight: bold;">Martin Rotemberg</p>
+    <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Website</a>
   </div>
 
 </div>
