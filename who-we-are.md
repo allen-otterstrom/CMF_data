@@ -59,7 +59,21 @@ title: Who We Are
     -webkit-columns: 2;  /* Chrome/Safari */
     -moz-columns: 2;     /* Firefox */
   }
+  .multi-col {
+    columns: 2;          
+    -webkit-columns: 2;  
+    -moz-columns: 2;     
+  }
+
+  /* More columns for RA section */
+  .multi-col-4 {
+    columns: 4;          
+    -webkit-columns: 4;  
+    -moz-columns: 4;     
+  }
 </style>
+
+
 
 # Principal Investigators
 <div class="pi-container">
@@ -102,40 +116,41 @@ title: Who We Are
 - Andrea Cerrato  
 
 # Part-time Research Assistants
-<div class="multi-col">
+<div class="multi-col-4">
 
-Paul Wang  
-Tony Li  
-Uday Malik  
-Howard Li  
-Eric Zhu  
-Elliot Lin  
-Alexandra Zhou  
-Chenhao Yu  
-Cynthia Ji  
-David Kirchenbauer  
-Ding Ding  
-Eugenia Huang  
-Evelyn Nie  
-Jizhou Wang  
-Kuitai Wang  
-Leann Lee  
-Risa Takashima  
-Adrianna Nehme  
-Annie Liu
-Astrid Ouyang  
-Cheresa Turek  
-Clara Ee  
-Jihee You  
-Joyce Wang  
-Kathy Yao  
-Mona Khairy  
-Nathan Unah  
-Neel Lahiri  
-Polly Ren  
-Scarlett Li  
-Tony Brooks  
-Yuerong Zhuang  
+- Paul Wang  
+- Tony Li  
+- Uday Malik  
+- Howard Li  
+- Eric Zhu  
+- Elliot Lin  
+- Alexandra Zhou  
+- Chenhao Yu  
+- Cynthia Ji  
+- David Kirchenbauer  
+- Ding Ding  
+- Eugenia Huang  
+- Evelyn Nie  
+- Jizhou Wang  
+- Kuitai Wang  
+- Leann Lee  
+- Risa Takashima  
+- Adrianna Nehme  
+- Annie Liu  
+- Astrid Ouyang  
+- Cheresa Turek  
+- Clara Ee  
+- Jihee You  
+- Joyce Wang  
+- Kathy Yao  
+- Mona Khairy  
+- Nathan Unah  
+- Neel Lahiri  
+- Polly Ren  
+- Scarlett Li  
+- Tony Brooks  
+- Yuerong Zhuang  
+
 </div>
 
 # Additional Support
