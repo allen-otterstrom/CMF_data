@@ -14,7 +14,7 @@ title: Who We Are
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: flex-start; /* keeps them aligned left */
+    justify-content: flex-start;
   }
 
   /* Each PI card */
@@ -46,54 +46,106 @@ title: Who We Are
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    color: #0073e6; /* theme-friendly blue, can adjust */
+    color: #0073e6;
   }
 
   .pi-card a:hover {
     text-decoration: underline;
   }
+
+  /* Multi-column lists */
+  .multi-col {
+    columns: 2;          /* number of columns */
+    -webkit-columns: 2;  /* Chrome/Safari */
+    -moz-columns: 2;     /* Firefox */
+  }
 </style>
 
 # Principal Investigators
-
 <div class="pi-container">
-
   <div class="pi-card">
     <img src="/CMF_data/assets/images/richard_hornbeck_portrait.jpg" alt="Richard Hornbeck">
     <p>Richard Hornbeck</p>
+    <p>University of Chicago</p>
     <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Website</a>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/anders_humlum_portrait.webp" alt="Anders Humlum">
     <p>Anders Humlum</p>
+    <p>University of Chicago</p>
     <a href="https://www.andershumlum.com/" target="_blank">Website</a>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/martin_rotemberg_portrait.jpeg" alt="Martin Rotemberg">
     <p>Martin Rotemberg</p>
+    <p>New York University</p>
     <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Website</a>
   </div>
-
 </div>
 
 # Current Full-Time and Graduate Research Team
-- Allen Otterstrom
-- Benjamin Lualdi
+- Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
+- Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
+
 # Former Full-Time and Graduate Research Team
-- Samuel Abers
-- Jiaxuan Lu
-- Bo-Yu Chen
-- Vivian Li
-- Ali Doxey
-- Natalie Yang
-- Will Cockriel
-- Julius Luettge
-- Andrea Cerrato
+<div class="multi-col">
+
+- Samuel Abers  
+- Jiaxuan Lu  
+- Bo-Yu Chen  
+- Vivian Li  
+- Terence Chau  
+- Ali Doxey  
+- Natalie Yang  
+- Will Cockriel  
+- Julius Luettge  
+- Andrea Cerrato  
+
+</div>
+
 # Part-time Research Assistants
+<div class="multi-col">
+
+- Paul Wang  
+- Tony Li  
+- Uday Malik  
+- Howard Li  
+- Eric Zhu  
+- Elliot Lin  
+- Alexandra Zhou  
+- Chenhao Yu  
+- Cynthia Ji  
+- David Kirchenbauer  
+- Ding Ding  
+- Eugenia Huang  
+- Evelyn Nie  
+- Jizhou Wang  
+- Kuitai Wang  
+- Leann Lee  
+- Risa Takashima  
+- Adrianna Nehme  
+- Annie Liu  
+- Astrid Ouyang  
+- Cheresa Turek  
+- Clara Ee  
+- Jihee You  
+- Joyce Wang  
+- Kathy Yao  
+- Mona Khairy  
+- Nathan Unah  
+- Neel Lahiri  
+- Polly Ren  
+- Scarlett Li  
+- Tony Brooks  
+- Yuerong Zhuang  
+
+</div>
+
 # Additional Support
-We are very grateful to the associates at Digital Divide Data (DDD)
+- Digital Divide Data (DDD)
+
 # Acknowledgments
 - BFI
 - NSF
