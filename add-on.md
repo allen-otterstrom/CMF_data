@@ -13,10 +13,10 @@ title: add-ons
 
 <h1 style="text-align:left;">Data Add-ons</h1>
 <p>
-  The following items are data packages submitted by other researchers that are supplemental to the CMF data. Descriptions and Downloads are available for each.
+  -There are currently no additional data packages.
 </p>
 
 <h1 style="text-align:left;">Forthcoming</h1>
 <p>
-  Our team is currently in the process of linking establishments across decades. The links will be available on this site at the conclusion of that effort.
+  Our team is currently in the process of linking establishments across decades.
 </p>
