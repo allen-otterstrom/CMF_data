@@ -101,11 +101,11 @@ title: Who We Are
   </div>
 </div>
 
-# Current Full-Time and Graduate Student Research Assistants
+# Current Full-Time and Graduate Research Assistants
 - Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
 - Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
 
-# Former Full-Time and Graduate Student Research Assistants
+# Former Full-Time and Graduate Research Assistants
 - Samuel Abers
 - Shanon Hsuan-Ming Hsu
 - Jiaxuan Lu  
@@ -118,7 +118,7 @@ title: Who We Are
 - Julius Luettge  
 - Andrea Cerrato  
 
-# Part-time Research Assistants
+# Part-time Student Research Assistants
 <ul class="multi-col-4">
   <li>Paul Wang</li>
   <li>Tony Li</li>
