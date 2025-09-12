@@ -48,6 +48,17 @@ header nav a.active {
     border-radius: 4px;
 }
 
+/* Only homepage text styling */
+.homepage-text {
+    background-color: #fff;   /* white background */
+    max-width: 900px;         /* limit width */
+    margin: 2em auto;         /* center horizontally and vertical spacing */
+    padding: 2em;             /* padding around text */
+    border-radius: 8px;       /* optional: rounded corners like main pages */
+    text-align: center;       /* optional: center the text */
+}
+
+
 /* Image container */
 .image-container {
     display: flex;
