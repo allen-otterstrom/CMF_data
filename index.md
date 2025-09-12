@@ -2,8 +2,10 @@
 layout: default 
 title: Historical Census of Manufactures Microdata 
 --- 
+<h1>
+  Welcome to the Census of Manufactures Historical Data Portal 
+</h1>
 
-# Welcome to the Census of Manufactures Historical Data Portal 
 
 <div class="homepage-text">
   This site provides access to newly digitized, detailed manufacturing data from the U.S. Census of Manufactures, spanning the mid-19th century.
@@ -25,5 +27,12 @@ title: Historical Census of Manufactures Microdata
   body.page-index {
     background-color: #fff;  /* same as header */
     color: #222;             /* optional: text color */
+}
+  /* Make the main header bigger on the homepage */
+body.page-index h1 {
+    font-size: 5em;   /* increase size as desired */
+    font-family: 'Bodoni Moda', serif; /* optional: match your header style */
+    font-weight: 400;  /* optional: lighter weight */
+    margin-bottom: 1em; /* spacing below header */
 }
 </style>
