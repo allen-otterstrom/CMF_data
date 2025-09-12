@@ -73,6 +73,14 @@ title: Who We Are
     list-style-position: inside; /* keep bullets aligned */
     padding-left: 20px;  /* spacing for bullets */
   }
+
+  .multi-col-2 {
+    columns: 2;          
+    -webkit-columns: 2;  
+    -moz-columns: 2;     
+    list-style-position: inside; /* keep bullets aligned */
+    padding-left: 20px;  /* spacing for bullets */
+  }
 </style>
 
 
@@ -81,23 +89,20 @@ title: Who We Are
 <div class="pi-container">
   <div class="pi-card">
     <img src="/CMF_data/assets/images/richard_hornbeck_portrait.jpg" alt="Richard Hornbeck">
-    <p>Richard Hornbeck</p>
+    <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Richard Hornbeck</a>
     <p>University of Chicago</p>
-    <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Website</a>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/anders_humlum_portrait.webp" alt="Anders Humlum">
-    <p>Anders Humlum</p>
+    <a href="https://www.andershumlum.com/" target="_blank">Anders Humlum</a>
     <p>University of Chicago</p>
-    <a href="https://www.andershumlum.com/" target="_blank">Website</a>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/martin_rotemberg_portrait.jpeg" alt="Martin Rotemberg">
-    <p>Martin Rotemberg</p>
+    <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Martin Rotemberg</a>
     <p>New York University</p>
-    <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Website</a>
   </div>
 </div>
 
@@ -106,18 +111,19 @@ title: Who We Are
 - Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
 
 # Former Full-Time and Graduate Research Assistants
-- Samuel Abers
-- Shanon Hsuan-Ming Hsu
-- Jiaxuan Lu  
-- Bo-Yu Chen  
-- Vivian Li  
-- Terence Chau  
-- Ali Doxey  
-- Natalie Yang  
-- Will Cockriel  
-- Julius Luettge  
-- Andrea Cerrato  
-
+<ul class="multi-col-2">
+<li>Samuel Abers</li>
+<li>Shanon Hsuan-Ming Hsu</li>
+<li>Jiaxuan Lu</li>
+<li>Bo-Yu Chen</li> 
+<li>Vivian Li</li>  
+<li>Terence Chau</li>  
+<li>Ali Doxey</li>  
+<li>Natalie Yang</li>  
+<li>Will Cockriel</li>  
+<li>Julius Luettge</li>  
+<li>Andrea Cerrato</li>  
+</ul>
 # Part-time Student Research Assistants
 <ul class="multi-col-4">
   <li>Paul Wang</li>
