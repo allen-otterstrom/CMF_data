@@ -1,71 +1,58 @@
+<!-- Header -->
 <header>
-  <div class="header-left">
-    <nav>
-      <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
-      <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
-      <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
-      <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
-      <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
-    </nav>
-  </div>
-
-  <div class="header-center">
-    <a href="{{ '/' | relative_url }}">
-      <h1>Census of Manufactures</h1>
-    </a>
-  </div>
+  <a href="{{ '/' | relative_url }}">
+    <h1>Census of Manufactures</h1>
+  </a>
+  <nav>
+    <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
+    <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+    <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
+    <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
+    <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
+  </nav>
 </header>
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
 <style>
-/* Use a clean sans-serif font like Montclaire */
+/* Header container */
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 2em;
-  background-color: #FFFFFF;
-  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; /* center title */
+  background-color: #ffffff;
+  padding: 1em 0;
 }
 
-/* Left nav */
-.header-left nav a {
-  margin-right: 1.5em;
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-}
-.header-left nav a.active,
-.header-left nav a:hover {
-  text-decoration: underline;
-}
-
-/* Centered title */
-.header-center {
-  flex: 1;
+/* Title */
+header h1 {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif; /* New Yorker style */
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #000000;
   text-align: center;
 }
-.header-center h1 {
-  margin: 0;
-  font-size: 2em;
-  color: #333;
+
+/* Navigation links */
+nav {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
-/* Responsive: stack nav above title on small screens */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .header-left {
-    margin-bottom: 0.5em;
-  }
-  .header-center {
-    text-align: center;
-    width: 100%;
-  }
-  .header-left nav a {
-    margin-right: 1em;
-  }
+nav a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
 }
 </style>
