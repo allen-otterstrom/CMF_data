@@ -162,28 +162,29 @@ th {
     background-color: #FFFFFF;
 }
 
-/* Dropdown container */
+/* Make parent container positioned so submenu can sit under it */
 .dropdown {
   position: relative;
 }
 
-/* Hide submenu by default */
+/* Submenu hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* directly below the parent link */
+  top: 100%; /* places it just below the parent link */
   left: 0;
-  background-color: #fff;
-  min-width: 180px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  z-index: 10;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
   flex-direction: column;
+  padding: 0.25em 0;
 }
 
-/* Links inside dropdown */
+/* Each submenu link */
 .dropdown-content a {
-  padding: 0.5em 1em;
   display: block;
+  padding: 0.5em 1em;
   color: #000;
   text-decoration: none;
   font-family: 'Playfair Display', serif;
@@ -193,7 +194,7 @@ th {
   background-color: #f2f2f2;
 }
 
-/* Show submenu on hover */
+/* Show submenu when hovering over the parent */
 .dropdown:hover .dropdown-content {
   display: flex;
 }
