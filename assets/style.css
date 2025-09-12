@@ -152,3 +152,31 @@ th {
   }
 }
 
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* space between links */
+  }
+
+  header nav a {
+    display: block;
+    width: 100%;
+    max-width: 250px; /* keeps them from being too wide */
+    padding: 10px;
+    background-color: #6e2020;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    background-color: #bd3737;
+  }
+}
+
