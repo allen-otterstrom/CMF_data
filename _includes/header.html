@@ -1,44 +1,211 @@
 <!-- Header -->
+<!-- Fonts (keep these in your <head> or above the header) -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 <!-- Header -->
-<header>
-  <nav class="nav-links">
-    <div class="dropdown">
-      <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
-    </div>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a></li>
 
-    <div class="dropdown">
-      <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
-      <div class="dropdown-content">
-        <a href="additional_data.html">Additional Data</a>
-        <a href="search.html">Search CMF Images</a>
-      </div>
-    </div>
+      <li class="nav-item has-submenu">
+        <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu">▾</button>
+        <ul class="submenu" aria-label="Data submenu">
+          <li><a href="raw-data.html">Raw Data</a></li>
+          <li><a href="cleaned-data.html">Cleaned Data</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+      </li>
 
-    <div class="dropdown">
-      <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
-      <div class="dropdown-content">
-        <a href="navigation.html">CMF Image Navigation</a>
-        <a href="data-structure.html">Prepared CMF Data Structure</a>
-        <a href="coverage.html">Coverage</a>
-        <a href="methodology.html">Methodology</a>
-        <a href="change-log.html">Change Log</a>
-        <a href="add-on.html">Contribute</a>
-      </div>
-    </div>
+      <li class="nav-item has-submenu">
+        <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
+        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu">▾</button>
+        <ul class="submenu" aria-label="About submenu">
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </li>
 
-    <div class="dropdown">
-      <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
-    </div>
-
-    <div class="dropdown">
-      <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
-    </div>
+      <li class="nav-item"><a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a></li>
+      <li class="nav-item"><a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a></li>
+    </ul>
   </nav>
 
   <div class="title">
     <a href="{{ '/' | relative_url }}">Census of Manufactures</a>
   </div>
 </header>
+
+<!-- Styles -->
+<style>
+/* header container */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em 2em;
+  background: #fff;
+}
+
+/* nav (left side) */
+.site-nav {
+  margin-right: auto; /* pushes title toward the middle */
+}
+
+/* top-level nav list */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25em;
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+}
+
+/* each top-level item */
+.nav-item {
+  position: relative; /* needed so .submenu absolute positions relative to this */
+}
+
+/* top-level links */
+.nav-item > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  padding: .25em .15em;
+}
+
+/* small caret button used for touch devices */
+.submenu-toggle {
+  display: none; /* shown on small screens via media query */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: .9em;
+  margin-left: .125em;
+  vertical-align: middle;
+}
+
+/* dropdown (submenu) */
+.submenu {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: calc(100% + 6px); /* a bit below the parent link */
+  left: 0;
+  min-width: 180px;
+  padding: 0.25em 0;
+  margin: 0;
+  list-style: none;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-radius: 4px;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+/* submenu items */
+.submenu li a {
+  display: block;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.submenu li a:hover { background: #f3f3f3; }
+
+/* show on hover for desktop */
+.nav-item:hover > .submenu {
+  display: flex;
+}
+
+/* also allow an "open" class for toggling via JS (mobile) */
+.nav-item.open > .submenu {
+  display: flex;
+}
+
+/* active / hover styles for top-level links */
+.nav-item > a:hover,
+.nav-item > a.active {
+  text-decoration: underline;
+}
+
+/* centered title */
+.title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+}
+
+.title a { text-decoration: none; color: #000; }
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .site-header { flex-direction: column; align-items: stretch; gap: .5em; }
+  .site-nav { margin-right: 0; }
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: .25em 0;
+  }
+  .nav-item { padding: .25em 1em; }
+  .nav-item > a { display: inline-block; width: calc(100% - 32px); } /* leaves room for toggle */
+  .submenu-toggle { display: inline-block; float: right; }
+  /* make submenu relative to the flow on mobile (so it expands beneath item) */
+  .submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    padding-left: 0;
+    border-radius: 0;
+  }
+}
+</style>
+
+<!-- Minimal JS to support tap/click toggles and click-outside to close -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Toggle submenu buttons
+  const toggles = document.querySelectorAll('.submenu-toggle');
+  toggles.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const li = btn.closest('.has-submenu');
+      const isOpen = li.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+
+  // Close any open menus when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.has-submenu')) {
+      document.querySelectorAll('.has-submenu.open').forEach(li => {
+        li.classList.remove('open');
+        const btn = li.querySelector('.submenu-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // Close on ESC
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.has-submenu.open').forEach(li => {
+        li.classList.remove('open');
+        const btn = li.querySelector('.submenu-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+});
+</script>
 
 
 <!-- Fonts -->
