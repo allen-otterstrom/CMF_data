@@ -1,17 +1,45 @@
 <!-- Header -->
+<!-- Header -->
 <header>
-  <div class="nav-links">
-    <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
-    <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
-    <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
-    <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
-    <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
-  </div>
+  <nav class="nav-links">
+    <div class="dropdown">
+      <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
+    </div>
+
+    <div class="dropdown">
+      <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+      <div class="dropdown-content">
+        <a href="additional_data.html">Additional Data</a>
+        <a href="search.html">Search CMF Images</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
+      <div class="dropdown-content">
+        <a href="navigation.html">CMF Image Navigation</a>
+        <a href="data-structure.html">Prepared CMF Data Structure</a>
+        <a href="coverage.html">Coverage</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="change-log.html">Change Log</a>
+        <a href="add-on.html">Contribute</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
+    </div>
+
+    <div class="dropdown">
+      <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
+    </div>
+  </nav>
 
   <div class="title">
     <a href="{{ '/' | relative_url }}">Census of Manufactures</a>
   </div>
 </header>
+
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
