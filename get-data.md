@@ -56,9 +56,7 @@ title: Get the Data
 
 <div class="button-grid">
   <a class="button" href="additional-data.html">Additional Data</a>
-  <a class="button" href="navigation.html">CMF Manuscript Navigation</a>
-  <a class="button" href="data-structure.html">CMF Data Structure</a>
-  <a class="button" href="search.html">CMF Images</a>
+  <a class="button" href="search.html">Search CMF Images</a>
 </div>
 
 <script>
