@@ -165,23 +165,23 @@ th {
 /* Make parent container positioned so submenu can sit under it */
 .dropdown {
   position: relative;
+  display: inline-block; /* makes the parent width = link width */
 }
 
-/* Submenu hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;           /* below parent link */
-  left: 50%;           /* anchor to horizontal center of parent */
-  transform: translateX(-50%); /* shift back half its width */
+  top: 100%;              /* directly below link */
+  left: 50%;              /* middle of parent */
+  transform: translateX(-50%); /* shift back by half */
   background: #fff;
-  min-width: 200px;
+  min-width: 200px;       /* or adjust to taste */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;
   flex-direction: column;
   padding: 0.25em 0;
-  text-align: left;    /* keep submenu text aligned left */
 }
+
 
 
 /* Each submenu link */
