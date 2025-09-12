@@ -30,7 +30,7 @@ title: Historical Census of Manufactures Microdata
 }
   /* Make the main header bigger on the homepage */
 body.page-index h1 {
-    font-size: 5em;   /* increase size as desired */
+    font-size: 4em;   /* increase size as desired */
     font-family: 'Bodoni Moda', serif; /* optional: match your header style */
     font-weight: 400;  /* optional: lighter weight */
     margin-bottom: 1em; /* spacing below header */
