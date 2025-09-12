@@ -16,3 +16,18 @@ This site provides access to newly digitized, detailed manufacturing data from t
   <a href="about.html">About the data</a> 
   <a href="explore.html">Explore the data</a> 
 </div> 
+
+<style>
+  /* Homepage specific styles */
+body.page-index {
+    background-color: #fff;  /* same as header */
+    color: #222;             /* optional: text color */
+}
+
+/* Center content and limit width */
+body.page-index > * {
+    max-width: 900px;       /* same as main on other pages */
+    margin: 2em auto;       /* centers horizontally with some top/bottom space */
+    padding: 1em 2em;       /* optional padding inside */
+}
+</style>
