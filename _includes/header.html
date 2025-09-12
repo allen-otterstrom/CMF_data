@@ -14,30 +14,30 @@
 </header>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 /* Header container */
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* centers title horizontally */
+  padding: 1.5em 2em;
   background-color: #fff;
-  padding: 2em 2em;
-  position: relative;
 }
 
-/* Nav links on left */
+/* Page links on the left */
 .nav-links {
   display: flex;
   gap: 1.5em;
   font-family: 'Playfair Display', serif;
+  margin-right: auto; /* pushes the title to the center */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .nav-links a:hover,
@@ -47,18 +47,27 @@ header {
 
 /* Centered title */
 .title {
-  position: absolute;
-  left: 50%;
-  top: 50%;                        /* center vertically */
-  transform: translate(-50%, -50%); /* center horizontally & vertically */
   font-family: 'Bodoni Moda', serif;
   font-weight: 400;
   font-size: 2em;
+  text-align: center;
 }
-
 
 .title a {
   text-decoration: none;
   color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
 }
 </style>
