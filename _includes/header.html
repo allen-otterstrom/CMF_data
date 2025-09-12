@@ -1,42 +1,71 @@
-<header style="display: flex; align-items: center; justify-content: space-between; padding-left: 20px; padding-right: 20px;">
-  <div style="display: flex; align-items: center;">
-    <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-      <h1 style="margin: 0;">Census of Manufactures</h1>
+<header>
+  <div class="header-left">
+    <nav>
+      <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
+      <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+      <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
+      <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
+      <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
+    </nav>
+  </div>
+
+  <div class="header-center">
+    <a href="{{ '/' | relative_url }}">
+      <h1>Census of Manufactures</h1>
     </a>
   </div>
-  <nav>
-    <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
-    <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
-    <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
-    <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
-    <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
-  </nav>
 </header>
 
-
 <style>
+/* Use a clean sans-serif font like Montclaire */
 header {
-  background-color: #6e2020; /* deep red */
-  color: white;
-  padding: 1.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: #FFFFFF;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+/* Left nav */
+.header-left nav a {
+  margin-right: 1.5em;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+.header-left nav a.active,
+.header-left nav a:hover {
+  text-decoration: underline;
+}
+
+/* Centered title */
+.header-center {
+  flex: 1;
   text-align: center;
 }
-header h1 {
+.header-center h1 {
   margin: 0;
   font-size: 2em;
-  color: inherit;
+  color: #333;
 }
-nav {
-  margin-top: 0.5em;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1em;
-  font-weight: bold;
-}
-nav a:hover,
-nav a.active {
-  text-decoration: underline;
+
+/* Responsive: stack nav above title on small screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-left {
+    margin-bottom: 0.5em;
+  }
+  .header-center {
+    text-align: center;
+    width: 100%;
+  }
+  .header-left nav a {
+    margin-right: 1em;
+  }
 }
 </style>
