@@ -14,4 +14,49 @@
 </header>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+/* Header container */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2em 2em;
+  position: relative;
+}
+
+/* Nav links on left */
+.nav-links {
+  display: flex;
+  gap: 1.5em;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* Centered title */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.title a {
+  text-decoration: none;
+  color: #000;
+}
+</style>
