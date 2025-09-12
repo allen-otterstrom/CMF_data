@@ -3,14 +3,11 @@ layout: default
 title: Historical Census of Manufactures Microdata 
 --- 
 
-<div class="homepage-text">
-  # Welcome to the Census of Manufactures Historical Data Portal 
+# Welcome to the Census of Manufactures Historical Data Portal 
 
+<div class="homepage-text">
   This site provides access to newly digitized, detailed manufacturing data from the U.S. Census of Manufactures, spanning the mid-19th century.
-</div>
-
-<div class="homepage-text">
-Here you’ll find cleaned and structured datasets, documentation of coverage and methodology, and tools for exploring county- and industry-level patterns over time. 
+  Here you’ll find cleaned and structured datasets, documentation of coverage and methodology, and tools for exploring county- and industry-level patterns over time. 
 </div>
 
 <div class="image-container"> 
@@ -23,3 +20,10 @@ Here you’ll find cleaned and structured datasets, documentation of coverage an
   <a href="about.html">About the data</a> 
   <a href="explore.html">Explore the data</a> 
 </div>
+
+<style>
+  body.page-index {
+    background-color: #fff;  /* same as header */
+    color: #222;             /* optional: text color */
+}
+</style>
