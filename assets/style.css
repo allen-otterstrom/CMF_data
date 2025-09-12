@@ -2,7 +2,8 @@
    Bodoni Moda for headers, Playfair Display for body and links */
 
 body {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Arial';
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -21,7 +22,8 @@ header {
 }
 
 header h1 {
-    font-family: 'Bodoni Moda', serif;
+    /*font-family: 'Bodoni Moda', serif;*/
+    font-family: 'Arial';
     font-weight: 400; /* lighter weight for title */
     font-size: 2em;
     margin: 0 0 0.5em 0;
@@ -29,7 +31,8 @@ header h1 {
 }
 
 header nav {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Arial';
     display: flex;
     gap: 1em;
 }
@@ -64,8 +67,8 @@ header nav a.active {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 400;
+    -family: 'Bodoni Moda', serif;
+    -weight: 400;
     color: #000; /* or #222 if you prefer dark gray */
 }
 
@@ -101,7 +104,8 @@ header nav a.active {
     display: inline-block;
     padding: 1em 2em;
     font-size: 1.1em;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Arial';
     font-weight: 400;
     background-color: #000000;
     color: white;
@@ -123,7 +127,8 @@ header nav a.active {
 /* Markdown body */
 .markdown-body {
     text-align: left;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+      font-family: 'Arial';
 }
 
 /* Select dropdown */
@@ -190,7 +195,8 @@ th {
   padding: 0.5em 1em;
   color: #000;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
+   font-family: 'Arial';
 }
 
 .dropdown-content a:hover {
