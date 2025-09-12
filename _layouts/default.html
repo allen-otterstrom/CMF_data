@@ -87,9 +87,14 @@
 
   {% include header.html %}
 
-  <main class="markdown-body">
-    {{ content }}
-  </main>
+{% if page.url != "/" and page.url != "/index.html" %}
+<main class="markdown-body">
+  {{ content }}
+</main>
+{% else %}
+{{ content }}
+{% endif %}
+
 
   {% if page.url != "/CMF_data/" %}
   <div style="text-align: center; margin-top: 1em;">
