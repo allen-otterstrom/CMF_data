@@ -171,15 +171,18 @@ th {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* places it just below the parent link */
-  left: 0;
+  top: 100%;           /* below parent link */
+  left: 50%;           /* anchor to horizontal center of parent */
+  transform: translateX(-50%); /* shift back half its width */
   background: #fff;
   min-width: 200px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;
   flex-direction: column;
   padding: 0.25em 0;
+  text-align: left;    /* keep submenu text aligned left */
 }
+
 
 /* Each submenu link */
 .dropdown-content a {
