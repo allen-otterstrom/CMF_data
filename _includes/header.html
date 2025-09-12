@@ -1,58 +1,62 @@
 <!-- Header -->
 <header>
-  <a href="{{ '/' | relative_url }}">
-    <h1>Census of Manufactures</h1>
-  </a>
-  <nav>
+  <div class="nav-links">
     <a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a>
     <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
     <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">About</a>
     <a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a>
     <a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a>
-  </nav>
+  </div>
+
+  <div class="title">
+    <a href="{{ '/' | relative_url }}">Census of Manufactures</a>
+  </div>
 </header>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
 
 <style>
 /* Header container */
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* center title */
-  background-color: #ffffff;
-  padding: 1em 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1em 2em;
+  position: relative;
 }
 
-/* Title */
-header h1 {
-  margin: 0;
-  font-family: 'Libre Baskerville', serif; /* New Yorker style */
-  font-weight: 700;
-  font-size: 2.5em;
-  color: #000000;
-  text-align: center;
-}
-
-/* Navigation links */
-nav {
-  margin-top: 0.5em;
+/* Nav links on left */
+.nav-links {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-nav a {
+  gap: 1.5em;
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  text-decoration: none;
-  color: #000000;
 }
 
-nav a:hover,
-nav a.active {
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   text-decoration: underline;
+}
+
+/* Centered title */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.title a {
+  text-decoration: none;
+  color: #000;
 }
 </style>
