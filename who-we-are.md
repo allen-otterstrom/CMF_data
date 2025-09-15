@@ -10,19 +10,19 @@ title: Who We Are
   }
 
   /* Container for the PI cards */
-  .pi-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
-  }
+.pi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between; /* spreads them out */
+}
 
-  /* Each PI card */
-  .pi-card {
-    flex: 1 1 200px;
-    max-width: 220px;
-    text-align: center;
-  }
+.pi-card {
+  flex: 1;                 /* each takes equal width */
+  min-width: 200px;        /* prevents shrinking too much */
+  text-align: center;
+}
+
 
   /* Portraits */
   .pi-card img {
