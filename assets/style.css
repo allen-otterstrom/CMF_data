@@ -126,11 +126,21 @@ header nav a.active {
 
 /* Markdown body */
 .markdown-body {
-    text-align: left;
+    text-align: center;
     /*font-family: 'Playfair Display', serif;*/
       font-family: 'Arial';
 }
 
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6,
+.markdown-body ul,
+.markdown-body ol {
+  text-align: left;
+}
 /* Select dropdown */
 select {
     font-size: 1.1em;
