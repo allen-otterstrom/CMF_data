@@ -4,11 +4,6 @@ title: Who We Are
 ---
 
 <style>
-  /* Force all headers to be left aligned */
-  h1, h2, h3, h4, h5, h6 {
-    text-align: left !important;
-  }
-
   /* Container for the PI cards */
 .pi-container {
   display: flex;
