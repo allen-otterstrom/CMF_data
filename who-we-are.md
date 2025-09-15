@@ -81,6 +81,14 @@ title: Who We Are
 .pi-card a:hover {
   text-decoration: underline; /* optional: underline on hover */
 }
+  /* Mobile responsive - change 4 columns to 2 on small screens */
+@media (max-width: 768px) {
+  .multi-col-4 {
+    columns: 2;          
+    -webkit-columns: 2;  
+    -moz-columns: 2;     
+  }
+}
 
 </style>
 
