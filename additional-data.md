@@ -7,7 +7,7 @@ title: Additional Data
 
 <div class="button-grid">
   <div class="button-item">
-    <a class="button" href="/CMF_data/raw_data.zip" download>Raw Data</a>
+    <a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/raw_data.zip" download>Raw Data</a>
     <div class="description">Download the raw transcriptions of the CMF manuscripts.</div>
   </div>
   <div class="button-item">
@@ -15,7 +15,7 @@ title: Additional Data
     <div class="description">Scripts, code and crosswalks used to clean the data.</div>
   </div>
   <div class="button-item">
-    <a class="button" href="/CMF_data/county_ind_data.zip" download>County-Ind Data</a>
+    <a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/ci_data.zip" download>County-Ind Data</a>
     <div class="description">Transcribed and cleaned county-industry level data originally published by the Census Bureau.</div>
   </div>
 </div>
