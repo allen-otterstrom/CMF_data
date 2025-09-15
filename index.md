@@ -36,4 +36,10 @@ body.page-index h1 {
     font-weight: 400;  /* optional: lighter weight */
     margin-bottom: 1em; /* spacing below header */
 }
+
+@media (max-width: 768px) {
+  body.page-index h1 {
+    font-size: 2em;   /* or whatever smaller size you prefer */
+  }
+}
 </style>
