@@ -37,7 +37,6 @@ title: Who We Are
   /* Names */
   .pi-card p {
     margin: 10px 0 5px 0;
-    font-weight: bold;
     text-align: center;
   }
 
