@@ -58,7 +58,7 @@ header nav a.active {
     margin: 2em auto;         /* center horizontally and vertical spacing */
     padding: 2em;             /* padding around text */
     border-radius: 8px;       /* optional: rounded corners like main pages */
-    text-align: left;       /* optional: center the text */
+    text-align: center;       /* optional: center the text */
 }
 
 .markdown-body h1,
@@ -126,7 +126,7 @@ header nav a.active {
 
 /* Markdown body */
 .markdown-body {
-    text-align: left;
+    text-align: center;
     /*font-family: 'Playfair Display', serif;*/
       font-family: 'Arial';
 }
