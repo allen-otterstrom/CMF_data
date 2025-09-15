@@ -126,7 +126,7 @@ header nav a.active {
 
 /* Markdown body */
 .markdown-body {
-    text-align: center;
+    text-align: left;
     /*font-family: 'Playfair Display', serif;*/
       font-family: 'Arial';
 }
@@ -160,7 +160,7 @@ table {
 th, td {
     border: 1px solid #ccc;
     padding: 5px 10px;
-    text-align: center;
+    text-align: left;
 }
 
 th {
