@@ -233,13 +233,26 @@ th {
     .button-grid {
         flex-direction: column;
         gap: 10px;
+        padding: 0 1rem; /* Add padding to prevent edge overflow */
     }
 
     .button-container a,
     .button {
-        width: 100%;
+        /* Remove width: 100% and use max-width instead */
+        max-width: 280px; /* Reasonable max width for mobile buttons */
+        width: auto; /* Let content determine width */
         font-size: 1em;
-        padding: 0.8em;
+        padding: 0.8em 1.5em; /* Adjusted padding */
+        margin: 0 auto; /* Center the buttons */
+        text-align: center;
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    /* Ensure the homepage text container is responsive too */
+    .homepage-text {
+        margin: 1em; /* Reduce margin on mobile */
+        padding: 1.5em; /* Reduce padding on mobile */
+        max-width: calc(100% - 2em); /* Ensure it doesn't overflow */
     }
 
     table {
