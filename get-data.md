@@ -32,7 +32,7 @@ title: Get the Data
 <a id="download-button" class="button" href="#" onclick="downloadSelectedFile()">Download Selected File</a>
 
 <br><br>
-<a class="button" href="codebook.pdf" download>Download Codebook</a>
+<a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/codebook.xlsx" download>Download Codebook</a>
 
 # Example Images
 
