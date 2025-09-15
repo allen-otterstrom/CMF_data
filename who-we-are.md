@@ -46,7 +46,9 @@ title: Who We Are
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    color: #0073e6;
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* removes underline */
   }
 
   .pi-card a:hover {
@@ -81,6 +83,11 @@ title: Who We Are
     list-style-position: inside; /* keep bullets aligned */
     padding-left: 20px;  /* spacing for bullets */
   }
+
+.pi-card a:hover {
+  text-decoration: underline; /* optional: underline on hover */
+}
+
 </style>
 
 
@@ -90,18 +97,21 @@ title: Who We Are
   <div class="pi-card">
     <img src="/CMF_data/assets/images/richard_hornbeck_portrait.jpg" alt="Richard Hornbeck">
     <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Richard Hornbeck</a>
-    <p>University of Chicago</p>
+    <p>Professor of Economics</p>
+    <p>The University of Chicago Booth School of Business</p>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/anders_humlum_portrait.webp" alt="Anders Humlum">
     <a href="https://www.andershumlum.com/" target="_blank">Anders Humlum</a>
-    <p>University of Chicago</p>
+    <p>Assistant Professor of Economics</p>
+    <p>The University of Chicago Booth School of Business</p>
   </div>
 
   <div class="pi-card">
     <img src="/CMF_data/assets/images/martin_rotemberg_portrait.jpeg" alt="Martin Rotemberg">
     <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Martin Rotemberg</a>
+    <p>Associate Professor of Economics</p>
     <p>New York University</p>
   </div>
 </div>
@@ -161,9 +171,10 @@ title: Who We Are
 </ul>
 
 # Additional Support
-- Digital Divide Data (DDD)
+We thank the team at Digital Divide Data (DDD) for their tremendous effort with data entry.
 
 # Acknowledgments
+We gratefully acknowledge financial support from the following institutions:
 - Becker Friedman Institute
 - National Science Foundation
 - Initiative on Global Markets at the University of Chicago Booth School of Business
