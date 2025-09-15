@@ -23,7 +23,7 @@
       <li class="nav-item"><a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a></li>
 
       <li class="nav-item has-submenu">
-        <a href="get-data.html">Data</a>
+        <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu">▾</button>
         <ul class="submenu" aria-label="Data submenu">
           <li><a href="get-data.html">Main Data</a></li>
@@ -34,7 +34,7 @@
       </li>
 
       <li class="nav-item has-submenu">
-        <a href="about.html">Documentation</a>
+        <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu">▾</button>
         <ul class="submenu" aria-label="About submenu">
           <li><a href="about.html">Overview</a></li>
@@ -47,8 +47,8 @@
         </ul>
       </li>
 
-      <li class="nav-item"><a href="explore.html">Interactive Map</a></li>
-      <li class="nav-item"><a href="who-we-are.html">Who We Are</a></li>
+      <li class="nav-item"><a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a></li>
+      <li class="nav-item"><a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a></li>
     </ul>
   </nav>
 
