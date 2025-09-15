@@ -1,15 +1,29 @@
-<!-- Header -->
-<!-- Fonts (keep these in your <head> or above the header) -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Census of Manufactures - Mobile Header</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
 <!-- Header -->
 <header class="site-header">
+  <!-- Hamburger button (mobile only) -->
+  <button class="hamburger" aria-expanded="false" aria-label="Toggle navigation menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
   <nav class="site-nav" aria-label="Primary">
     <ul class="nav-links">
-      <li class="nav-item"><a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a></li>
+      <li class="nav-item"><a href="index.html" class="active">Home</a></li>
 
       <li class="nav-item has-submenu">
-        <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+        <a href="get-data.html">Data</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu">▾</button>
         <ul class="submenu" aria-label="Data submenu">
           <li><a href="get-data.html">Main Data</a></li>
@@ -19,7 +33,7 @@
       </li>
 
       <li class="nav-item has-submenu">
-        <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
+        <a href="about.html">Documentation</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu">▾</button>
         <ul class="submenu" aria-label="About submenu">
           <li><a href="about.html">Overview</a></li>
@@ -33,60 +47,107 @@
         </ul>
       </li>
 
-      <li class="nav-item"><a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a></li>
-      <li class="nav-item"><a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a></li>
+      <li class="nav-item"><a href="explore.html">Interactive Map</a></li>
+      <li class="nav-item"><a href="who-we-are.html">Who We Are</a></li>
     </ul>
   </nav>
 
   <div class="title">
-    <a href="{{ '/' | relative_url }}">Census of Manufactures</a>
+    <a href="/">Census of Manufactures</a>
   </div>
 </header>
 
-<!-- Styles -->
+<!-- Demo content -->
+<main style="padding: 2rem; background: #f8f9fa; min-height: 500px;">
+  <h1>Your Website Content Here</h1>
+  <p>This is a demo of your mobile-friendly header. Try resizing the browser window to see the hamburger menu in action!</p>
+</main>
+
 <style>
-/* header container */
+/* Header container */
 .site-header {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5em 2em;
   background: #fff;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* nav (left side) */
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px 0;
+  transition: 0.3s;
+  transform-origin: center;
+}
+
+/* Hamburger animation when open */
+.hamburger.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Nav (left side on desktop) */
 .site-nav {
-  margin-right: auto; /* pushes title toward the middle */
+  margin-right: auto;
 }
 
-/* top-level nav list */
+/* Top-level nav list */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.25em;
   padding: 0;
   margin: 0;
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   align-items: center;
 }
 
-/* each top-level item */
+/* Each top-level item */
 .nav-item {
-  position: relative; /* needed so .submenu absolute positions relative to this */
+  position: relative;
 }
 
-/* top-level links */
+/* Top-level links */
 .nav-item > a {
   text-decoration: none;
   color: #000;
   font-weight: 400;
   padding: .25em .15em;
+  display: block;
 }
 
-/* small caret button used for touch devices */
+/* Submenu toggle button */
 .submenu-toggle {
-  display: none; /* shown on small screens via media query */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -95,11 +156,11 @@
   vertical-align: middle;
 }
 
-/* dropdown (submenu) */
+/* Dropdown (submenu) */
 .submenu {
-  display: none; /* hidden by default */
+  display: none;
   position: absolute;
-  top: calc(100% + 2px); /* a bit below the parent link */
+  top: calc(100% + 2px);
   left: 0;
   min-width: 180px;
   padding: 0.25em 0;
@@ -112,74 +173,179 @@
   flex-direction: column;
 }
 
-/* submenu items */
+/* Submenu items */
 .submenu li a {
   display: block;
   padding: 0.5em 1em;
   white-space: nowrap;
   color: #000;
   text-decoration: none;
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
 }
 
-.submenu li a:hover { background: #f3f3f3; }
+.submenu li a:hover {
+  background: #f3f3f3;
+}
 
-/* show on hover for desktop */
+/* Show submenu on hover for desktop */
 .nav-item:hover > .submenu {
   display: flex;
 }
 
-/* also allow an "open" class for toggling via JS (mobile) */
+/* Also allow "open" class for toggling via JS */
 .nav-item.open > .submenu {
   display: flex;
 }
 
-/* active / hover styles for top-level links */
+/* Active / hover styles for top-level links */
 .nav-item > a:hover,
 .nav-item > a.active {
   text-decoration: underline;
 }
 
-/* centered title */
+/* Centered title */
 .title {
-  /*font-family: 'Bodoni Moda', serif;*/
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 2em;
   text-align: center;
 }
 
-.title a { text-decoration: none; color: #000; }
+.title a {
+  text-decoration: none;
+  color: #000;
+}
 
-/* Responsive (mobile) */
+/* Mobile styles */
 @media (max-width: 768px) {
-  .site-header { flex-direction: column; align-items: stretch; gap: .5em; }
-  .site-nav { margin-right: 0; }
+  .site-header {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide nav by default on mobile */
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 0;
+    z-index: 1000;
+  }
+
+  /* Show nav when menu is open */
+  .site-nav.open {
+    display: block;
+  }
+
   .nav-links {
     flex-direction: column;
     gap: 0;
     width: 100%;
-    padding: .25em 0;
+    padding: 1rem 0;
   }
-  .nav-item { padding: .25em 1em; }
-  .nav-item > a { display: inline-block; width: calc(100% - 32px); } /* leaves room for toggle */
-  .submenu-toggle { display: inline-block; float: right; }
-  /* make submenu relative to the flow on mobile (so it expands beneath item) */
+
+  .nav-item {
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item > a {
+    padding: 1rem 1.5rem;
+    width: calc(100% - 40px);
+    display: inline-block;
+  }
+
+  /* Show submenu toggle on mobile */
+  .has-submenu .submenu-toggle {
+    display: inline-block;
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+  }
+
+  /* Mobile submenu styles */
   .submenu {
     position: relative;
     top: 0;
     left: 0;
     box-shadow: none;
-    padding-left: 0;
     border-radius: 0;
+    background: #f8f9fa;
+  }
+
+  .submenu li a {
+    padding: 0.75rem 2.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .submenu li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Adjust title size on mobile */
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+/* Overlay for mobile menu */
+@media (max-width: 768px) {
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+
+  .menu-overlay.open {
+    display: block;
   }
 }
 </style>
 
-<!-- Minimal JS to support tap/click toggles and click-outside to close -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.site-nav');
+  const body = document.body;
+
+  // Toggle main mobile menu
+  if (hamburger) {
+    hamburger.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const isOpen = nav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      
+      // Prevent body scroll when menu is open
+      if (isOpen) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = '';
+      }
+    });
+  }
+
   // Toggle submenu buttons
   const toggles = document.querySelectorAll('.submenu-toggle');
   toggles.forEach(btn => {
@@ -192,9 +358,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Close any open menus when clicking outside
+  // Close menu when clicking outside (mobile)
   document.addEventListener('click', function (e) {
-    if (!e.target.closest('.has-submenu')) {
+    if (window.innerWidth <= 768) {
+      if (!e.target.closest('.site-header')) {
+        nav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        body.style.overflow = '';
+      }
+    } else {
+      // Desktop: close submenus when clicking outside
+      if (!e.target.closest('.has-submenu')) {
+        document.querySelectorAll('.has-submenu.open').forEach(li => {
+          li.classList.remove('open');
+          const btn = li.querySelector('.submenu-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+    }
+  });
+
+  // Close on ESC key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      if (window.innerWidth <= 768) {
+        nav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        body.style.overflow = '';
+      }
+      
+      // Close any open submenus
       document.querySelectorAll('.has-submenu.open').forEach(li => {
         li.classList.remove('open');
         const btn = li.querySelector('.submenu-toggle');
@@ -203,77 +398,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Close on ESC
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      document.querySelectorAll('.has-submenu.open').forEach(li => {
-        li.classList.remove('open');
-        const btn = li.querySelector('.submenu-toggle');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      });
+  // Handle window resize
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      // Reset mobile menu state when switching to desktop
+      nav.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      body.style.overflow = '';
     }
   });
 });
 </script>
 
-
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-<style>
-/* Header container */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centers title horizontally */
-  padding: 1.5em 2em;
-  background-color: #fff;
-}
-
-/* Page links on the left */
-.nav-links {
-  display: flex;
-  gap: 1.5em;
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Arial';
-  margin-right: auto; /* pushes the title to the center */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 400;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  text-decoration: underline;
-}
-
-/* Centered title */
-.title {
-  /*font-family: 'Bodoni Moda', serif;*/
-  font-family: 'Arial';
-  font-weight: 400;
-  font-size: 2em;
-  text-align: center;
-}
-
-.title a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    margin-right: 0;
-    margin-bottom: 0.5em;
-  }
-}
-</style>
+</body>
+</html>
