@@ -8,7 +8,7 @@ title: Get the Data
 <label for="data-dropdown"><strong>Select Year / Schedule:</strong></label>
 <select id="data-dropdown" onchange="updateSelectedFile(this.value)">
   <option value="">-- Choose a file --</option>
-  <option value="all_appended.csv">All Data</option>
+  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/all_data.zip">All Data</option>
   <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1850.csv">1850</option>
   <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1860.csv">1860</option>
   <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1870.csv">1870</option>
