@@ -24,7 +24,7 @@
 
       <li class="nav-item has-submenu">
         <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
-        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu">▾</button>
+        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu"></button>
         <ul class="submenu" aria-label="Data submenu">
           <li><a href="get-data.html">Main Data</a></li>
           <li><a href="additional-data.html">Additional Data</a></li>
@@ -35,7 +35,7 @@
 
       <li class="nav-item has-submenu">
         <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
-        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu">▾</button>
+        <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu"></button>
         <ul class="submenu" aria-label="About submenu">
           <li><a href="about.html">Overview</a></li>
           <li><a href="navigation.html">CMF Manuscript Navigation</a></li>
@@ -263,14 +263,9 @@
   }
 
   /* Show submenu toggle on mobile */
-  .has-submenu .submenu-toggle {
-    display: inline-block;
-    float: right;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
-    padding: 0.25rem;
-  }
-
+.has-submenu .submenu-toggle {
+  display: none;
+}
   /* Mobile submenu styles */
   .submenu {
     position: relative;
@@ -341,16 +336,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Toggle submenu buttons
-  const toggles = document.querySelectorAll('.submenu-toggle');
-  toggles.forEach(btn => {
-    btn.addEventListener('click', function (e) {
+// Toggle submenu buttons (desktop) and main links (mobile)
+const toggles = document.querySelectorAll('.submenu-toggle');
+const hasSubmenus = document.querySelectorAll('.has-submenu > a');
+
+// Desktop: handle toggle buttons
+toggles.forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const li = btn.closest('.has-submenu');
+    const isOpen = li.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+});
+
+// Mobile: handle clicks on main navigation links that have submenus
+hasSubmenus.forEach(link => {
+  link.addEventListener('click', function (e) {
+    if (window.innerWidth <= 768) {
       e.preventDefault();
       e.stopPropagation();
-      const li = btn.closest('.has-submenu');
+      const li = link.closest('.has-submenu');
       const isOpen = li.classList.toggle('open');
-      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
+    }
   });
+});
 
   // Close menu when clicking outside (mobile)
   document.addEventListener('click', function (e) {
