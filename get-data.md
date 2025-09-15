@@ -29,7 +29,7 @@ title: Get the Data
 
 <span id="selected-file" style="margin-left: 15px; font-weight: bold; font-size: 1.2em;">No file selected</span>
 <br><br>
-<a id="download-button" class="button" href="#" onclick="downloadSelectedFile()">Download Selected File</a>
+<a id="download-button" class="button" href="#" style="pointer-events: none; opacity: 0.5;">Download Selected File</a>
 
 <br><br>
 <a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/codebook.xlsx" download>Download Codebook</a>
@@ -70,21 +70,25 @@ function updateSelectedFile(fileUrl) {
   const selectedOption = dropdown.options[dropdown.selectedIndex];
   selectedFile = selectedOption.value;
   selectedFileLabel = selectedOption.text;
-  document.getElementById('selected-file').textContent = selectedFileLabel || "No file selected";
+  
+  const downloadButton = document.getElementById('download-button');
+  const fileDisplay = document.getElementById('selected-file');
+  
+  if (selectedFile) {
+    fileDisplay.textContent = selectedFileLabel;
+    downloadButton.href = selectedFile;
+    downloadButton.download = selectedFile.split('/').pop();
+    downloadButton.style.pointerEvents = 'auto';
+    downloadButton.style.opacity = '1';
+  } else {
+    fileDisplay.textContent = "No file selected";
+    downloadButton.href = '#';
+    downloadButton.removeAttribute('download');
+    downloadButton.style.pointerEvents = 'none';
+    downloadButton.style.opacity = '0.5';
+  }
 }
 
-function downloadSelectedFile() {
-  if (!selectedFile) {
-    alert("Please select a file to download.");
-    return;
-  }
-  const link = document.createElement('a');
-  link.href = selectedFile;
-  link.download = selectedFile.split('/').pop();
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
 
 // Image modal
 function openImageModal(src, label) {
