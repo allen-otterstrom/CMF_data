@@ -39,7 +39,7 @@ body.page-index h1 {
 
 @media (max-width: 768px) {
   body.page-index h1 {
-    font-size: 2em;   /* or whatever smaller size you prefer */
+    font-size: 1.5em;   /* or whatever smaller size you prefer */
   }
 }
 </style>
