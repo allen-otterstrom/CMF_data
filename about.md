@@ -65,11 +65,16 @@ Below is a modern state-boundary map showing which states have **complete covera
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; border: 1px solid #ccc; border-left: 6px solid #007acc; padding: 1.2em; margin-top: 2em; background-color: #f9f9f9; border-radius: 8px;">
 
+
 <div>
   <h3 style="margin-top: 0;">Citation</h3>
   <p>
     Publications using any data from this website should cite the following paper:<br><br>
-    “Gaining Steam: Technology Diffusion with Recurring Lock-in,” with Shanon Hsuan-Ming Hsu, Anders Humlum, and Martin Rotemberg, September 2025.
+    <a href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/steam_power_lock_in.pdf" 
+       target="_blank" 
+       class="citation-link">
+      "Gaining Steam: Technology Diffusion with Recurring Lock-in," Richard Hornbeck, Shanon Hsuan-Ming Hsu, Anders Humlum, and Martin Rotemberg, September 2025.
+    </a>
   </p>
 </div>
 
@@ -84,3 +89,12 @@ Below is a modern state-boundary map showing which states have **complete covera
 </div>
 
 </div>
+
+
+
+<style>
+.citation-link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
