@@ -188,17 +188,17 @@
   display: flex;
 }
 
-/* Also allow "open" class for toggling via JS */
 .nav-item.open > .submenu {
   display: flex;
 }
 
-/* Active / hover styles for top-level links */
-.nav-item > a:hover,
+.nav-item > a:hover {
+  background: #f3f3f3;
+}
+
 .nav-item > a.active {
   text-decoration: underline;
 }
-
 /* Centered title */
 .title {
   font-family: 'Arial', sans-serif;
