@@ -40,7 +40,7 @@ body.page-index h1 {
 @media (max-width: 768px) {
   body.page-index h1 {
     font-size: 1.5em;
-    margin: .5em .75rem 0 .75rem;
+    margin: 1em .75rem 0 .75rem;
   }
 }
 </style>
