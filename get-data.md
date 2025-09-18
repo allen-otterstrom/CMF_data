@@ -41,7 +41,7 @@ title: Get the Data
   <option value="">-- Choose an image --</option>
   <option value="/CMF_data/assets/images/1850_CMF.jpg">1850 Manuscript Image</option>
   <option value="/CMF_data/assets/images/1860_CMF.jpg">1860 Manuscript Image</option>
-  <option value="/CMF_data/assets/images/1870_CMF.jpg">1870 Manuscript Image</option>
+  <option value="/CMF_data/assets/images/1870_CMF.jpeg">1870 Manuscript Image</option>
   <option value="/CMF_data/assets/images/1880_gss_CMF.jpg">1880 General Schedule Image</option>
   <option value="/CMF_data/assets/images/1880_ss1_CMF_agimp.jpg">1880 Special Schedule 1 Image</option>
   <option value="/CMF_data/assets/images/1880_ss2_CMF_paper.jpg">1880 Special Schedule 2 Image</option>
