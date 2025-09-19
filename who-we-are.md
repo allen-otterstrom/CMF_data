@@ -97,26 +97,27 @@ title: Who We Are
 # Principal Investigators
 <div class="pi-container">
   <div class="pi-card">
-    <img src="/CMF_data/assets/images/richard_hornbeck_portrait.jpg" alt="Richard Hornbeck">
+    <img src="{{ '/assets/images/richard_hornbeck_portrait.jpg' | relative_url }}" alt="Richard Hornbeck">
     <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Richard Hornbeck</a>
     <p>Professor of Economics</p>
     <p>The University of Chicago Booth School of Business</p>
   </div>
 
   <div class="pi-card">
-    <img src="/CMF_data/assets/images/anders_humlum_portrait.webp" alt="Anders Humlum">
+    <img src="{{ '/assets/images/anders_humlum_portrait.webp' | relative_url }}" alt="Anders Humlum">
     <a href="https://www.andershumlum.com/" target="_blank">Anders Humlum</a>
     <p>Assistant Professor of Economics</p>
     <p>The University of Chicago Booth School of Business</p>
   </div>
 
   <div class="pi-card">
-    <img src="/CMF_data/assets/images/martin_rotemberg_portrait.jpeg" alt="Martin Rotemberg">
+    <img src="{{ '/assets/images/martin_rotemberg_portrait.jpeg' | relative_url }}" alt="Martin Rotemberg">
     <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Martin Rotemberg</a>
     <p>Associate Professor of Economics</p>
     <p>New York University</p>
   </div>
 </div>
+
 
 # Current Full-Time and Graduate Research Assistants
 - Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
