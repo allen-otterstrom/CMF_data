@@ -12,11 +12,11 @@ The resulting datasets enable researchers to analyze industrial change, geograph
 Click the following link to download a PDF of the complete set of documentation for this project:
 <br><br>
 <a class="button" href="{{ '/assets/master_documentation.pdf' | relative_url }}" download>Download Documentation</a>
----
+
 ## Coverage Map
 Below is a modern state-boundary map showing which states have **complete coverage**, **partial coverage**, or **no coverage** in the CMF dat, as compared to the published county-industry tabulations.
 ![Coverage Map]({{ '/assets/images/simple_coverage_map.png' | relative_url }})
----
+
 ## Related Pages
 <div style="display: flex; flex-direction: column; gap: 1.2em;">
   <div style="display: flex; align-items: center; gap: 1em;">
