@@ -15,10 +15,10 @@ The list will appear below with links to the full-size scans.
 <script>
 let images = null; // will hold the JSON once loaded
 const jsonFiles = [
-  "assets/image_links_1850.json",
-  "assets/image_links_1860.json",
-  "assets/image_links_1870.json",
-  "assets/image_links_1880.json"
+  "{{ '/assets/image_links_1850.json' | relative_url }}",
+  "{{ '/assets/image_links_1860.json' | relative_url }}",
+  "{{ '/assets/image_links_1870.json' | relative_url }}",
+  "{{ '/assets/image_links_1880.json' | relative_url }}"
 ];
 
 async function loadImages() {
@@ -65,7 +65,7 @@ document.getElementById("searchBox").addEventListener("input", async function(e)
   matches.forEach(img => {
     const link = document.createElement("a");
     link.href = img.url;
-  link.textContent = img.filename;
+    link.textContent = img.filename;
     link.target = "_blank";
     link.style.display = "block";
     link.style.marginBottom = "0.5em";
