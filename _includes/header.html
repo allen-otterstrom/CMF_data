@@ -20,35 +20,35 @@
 
   <nav class="site-nav" aria-label="Primary">
     <ul class="nav-links">
-      <li class="nav-item"><a href="index.html" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a></li>
+      <li class="nav-item"><a href="{{ '/' | relative_url }}" class="{% if page.path == 'index.md' %}active{% endif %}">Home</a></li>
 
       <li class="nav-item has-submenu">
-        <a href="get-data.html" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
+        <a href="{{ '/get-data' | relative_url }}" class="{% if page.path == 'get-data.md' %}active{% endif %}">Data</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Data submenu"></button>
         <ul class="submenu" aria-label="Data submenu">
-          <li><a href="get-data.html">Main Data</a></li>
-          <li><a href="additional-data.html">Additional Data</a></li>
-          <li><a href="search.html">Search CMF Images</a></li>
-          <li><a href="add-on.html">Contribute</a></li>
+          <li><a href="{{ '/get-data' | relative_url }}">Main Data</a></li>
+          <li><a href="{{ '/additional-data' | relative_url }}">Additional Data</a></li>
+          <li><a href="{{ '/search' | relative_url }}">Search CMF Images</a></li>
+          <li><a href="{{ '/add-on' | relative_url }}">Contribute</a></li>
         </ul>
       </li>
 
       <li class="nav-item has-submenu">
-        <a href="about.html" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
+        <a href="{{ '/about' | relative_url }}" class="{% if page.path == 'about.md' %}active{% endif %}">Documentation</a>
         <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle About submenu"></button>
         <ul class="submenu" aria-label="About submenu">
-          <li><a href="about.html">Overview</a></li>
-          <li><a href="navigation.html">CMF Manuscript Navigation</a></li>
-          <li><a href="data-structure.html">Prepared CMF Data Structure</a></li>
-          <li><a href="coverage.html">Coverage</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="methodology.html">Methodology</a></li>
-          <li><a href="change-log.html">Change Log</a></li>
+          <li><a href="{{ '/about' | relative_url }}">Overview</a></li>
+          <li><a href="{{ '/navigation' | relative_url }}">CMF Manuscript Navigation</a></li>
+          <li><a href="{{ '/data-structure' | relative_url }}">Prepared CMF Data Structure</a></li>
+          <li><a href="{{ '/coverage' | relative_url }}">Coverage</a></li>
+          <li><a href="{{ '/faqs' | relative_url }}">FAQs</a></li>
+          <li><a href="{{ '/methodology' | relative_url }}">Methodology</a></li>
+          <li><a href="{{ '/change-log' | relative_url }}">Change Log</a></li>
         </ul>
       </li>
 
-      <li class="nav-item"><a href="explore.html" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a></li>
-      <li class="nav-item"><a href="who-we-are.html" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a></li>
+      <li class="nav-item"><a href="{{ '/explore' | relative_url }}" class="{% if page.path == 'explore.md' %}active{% endif %}">Interactive Map</a></li>
+      <li class="nav-item"><a href="{{ '/who-we-are' | relative_url }}" class="{% if page.path == 'who-we-are.md' %}active{% endif %}">Who We Are</a></li>
     </ul>
   </nav>
 
