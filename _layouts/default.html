@@ -85,7 +85,7 @@
 {% endif %}
  {% if page.url != "/" and page.url != "/index.html" %}
   <div style="text-align: center; margin-top: 1em;">
-    <a class="back-link" href="{{ '/' | relative_url }}">← Back</a>
+    <a class="back-link" href="#" onclick="if (document.referrer !== '') { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; } return false;">← Back</a>
   </div>
   {% endif %}
 </body>
