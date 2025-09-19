@@ -25,13 +25,13 @@ The original census manuscripts (the paper sheets filled out by enumerators) end
 
 - **Standardize the images**
   
-  - Most scans captured two manuscript pages per image; many were blank or contained only enumerators’ notes.
+  - Most scans captured two manuscript pages per image; many were blank or contained only enumerators' notes.
   
   - Every image was reviewed to identify pages with usable data.
 
 - **Publish the image set**
   
-  - All vetted images are now hosted on the project’s data website for public access.
+  - All vetted images are now hosted on the project's data website for public access.
 
 These steps produced a unified, quality‑controlled image archive that serves as the foundation for further data extraction and analysis.
 
@@ -43,7 +43,7 @@ To assess coverage, the team compared the total number of establishments in the 
 
 ## Data Transcription
 
-Once images were split, organized, renamed, and metadata gathered, the transcription process began. Images and Excel batches with column names reflecting the original column names on the manuscripts were given to a data team to be transcribed. Each item was double transcribed by two different associates, with a third resolving any differences. In total, there were 65,211 manuscript images with manufacturing establishments, including 28,506 pages from 1880. The average page had 7 establishments. When we have records for a state and decade, the records are normally complete for the entire state. For some states and decades, there are some entire counties missing or parts of counties from comparing our establishment totals to the published county-level tabulations (see the explanation of [coverage](coverage.html)).
+Once images were split, organized, renamed, and metadata gathered, the transcription process began. Images and Excel batches with column names reflecting the original column names on the manuscripts were given to a data team to be transcribed. Each item was double transcribed by two different associates, with a third resolving any differences. In total, there were 65,211 manuscript images with manufacturing establishments, including 28,506 pages from 1880. The average page had 7 establishments. When we have records for a state and decade, the records are normally complete for the entire state. For some states and decades, there are some entire counties missing or parts of counties from comparing our establishment totals to the published county-level tabulations (see the explanation of [coverage]({{ '/coverage' | relative_url }})).
 
 ## Raw Data Processing and Cleaning
 
@@ -55,15 +55,11 @@ Some values for string variables were entered in the "wrong place", when the sur
 
 In addition to these manual steps, many algorithmic and other cleaning steps performed through code were required to get the data into a usable state. The entire set of cleaning and preparation steps that take the data from its raw entered form to its current state are outlined below.
 
-1. [Manual Steps](methodology_sub/1_manual_cleaning.html)
-2. [String Cleaning](methodology_sub/2_string_cleaning.html)
-3. [Reshape](methodology_sub/3_reshape.html)
-4. [County Assignment](methodology_sub/4_county_assignment.html)
-5. [Industry Classification](methodology_sub/5_industry_assignment.html)
-6. [Power and Machine Cleaning](methodology_sub/6_power_machine_cleaning.html)
-7. [Standardize 1880](methodology_sub/7_standardize_1880.html)
-8. [Numeric Variable Cleaning](methodology_sub/8_variable_cleaning.html)
-
-
-
-
+1. [Manual Steps]({{ '/methodology_sub/1_manual_cleaning' | relative_url }})
+2. [String Cleaning]({{ '/methodology_sub/2_string_cleaning' | relative_url }})
+3. [Reshape]({{ '/methodology_sub/3_reshape' | relative_url }})
+4. [County Assignment]({{ '/methodology_sub/4_county_assignment' | relative_url }})
+5. [Industry Classification]({{ '/methodology_sub/5_industry_assignment' | relative_url }})
+6. [Power and Machine Cleaning]({{ '/methodology_sub/6_power_machine_cleaning' | relative_url }})
+7. [Standardize 1880]({{ '/methodology_sub/7_standardize_1880' | relative_url }})
+8. [Numeric Variable Cleaning]({{ '/methodology_sub/8_variable_cleaning' | relative_url }})
