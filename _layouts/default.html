@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
-
   <!-- External CSS -->
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-
   <!-- Google Fonts: Bodoni Moda + Playfair Display -->
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
   <style>
     /* Body text */
     body {
@@ -22,7 +19,6 @@
       background-color: #fdfdfd;
       color: #222;
     }
-
     /* Main content container */
     main {
       max-width: 900px;
@@ -32,7 +28,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
     /* Headers: Bodoni Moda */
     h1, h2, h3, h4, h5, h6 {
       /*font-family: 'Bodoni Moda', serif;*/
@@ -43,11 +38,9 @@
       margin-bottom: 0.5em;
       text-align: center;
     }
-
     p {
       margin: 1em 0;
     }
-
     /* Images */
     .markdown-body img {
       display: block;
@@ -59,7 +52,6 @@
       background: #fff;
       padding: 4px;
     }
-
     /* Back link */
     .back-link {
       text-decoration: none;
@@ -67,18 +59,15 @@
       cursor: pointer;
       font-size: 1em;
     }
-
     .back-link:hover {
       text-decoration: underline;
     }
-
     /* Mobile responsiveness */
     @media (max-width: 600px) {
       main {
         margin: 1em;
         padding: 1em;
       }
-
       h1, h2, h3, h4, h5, h6 {
         font-size: 1.5em;
       }
@@ -86,9 +75,7 @@
   </style>
 </head>
 <body class="{% if page.url == '/' %}page-index{% endif %}">
-
   {% include header.html %}
-
 {% if page.url != "/" and page.url != "/index.html" %}
 <main class="markdown-body">
   {{ content }}
@@ -96,13 +83,10 @@
 {% else %}
 {{ content }}
 {% endif %}
-
-
  {% if page.url != "/" and page.url != "/index.html" %}
   <div style="text-align: center; margin-top: 1em;">
-    <a class="back-link" href="javascript:window.history.back();">← Back</a>
+    <a class="back-link" href="{{ '/' | relative_url }}">← Back</a>
   </div>
   {% endif %}
-
 </body>
 </html>
