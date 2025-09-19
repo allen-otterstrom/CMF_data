@@ -1,167 +1,75 @@
 ---
 layout: default
-title: Who We Are
+title: Image Search
 ---
 
-<style>
-  /* Container for the PI cards */
-.pi-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between; /* spreads them out */
-}
+# Search Census Manuscript Images
 
-.pi-card {
-  flex: 1;                 
-  min-width: 200px;        
-  text-align: center;
-}
+Type part of a filename, state, year, or industry (e.g., Pennsylvania Steel) to find an image.  
+The list will appear below with links to the full-size scans.
 
-.pi-card img {
-  width: 150px;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border: none;
-}
+<input type="text" id="searchBox" placeholder="Search for an image..." style="width: 100%; padding: 0.6em; font-size: 1em; margin-top: 1em;">
 
-.pi-card p {
-  margin: 10px 0 5px 0;
-  text-align: center;
-}
+<div id="results" style="margin-top: 1.5em;"></div>
 
-.pi-card a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+<script>
+let images = null; // will hold the JSON once loaded
+const jsonFiles = [
+  "{{ '/assets/image_links_1850.json' | relative_url }}",
+  "{{ '/assets/image_links_1860.json' | relative_url }}",
+  "{{ '/assets/image_links_1870.json' | relative_url }}",
+  "{{ '/assets/image_links_1880.json' | relative_url }}"
+];
 
-.pi-card a:hover {
-  text-decoration: underline;
-}
-
-/* Multi-column lists */
-.multi-col {
-  columns: 2;          
-  -webkit-columns: 2;  
-  -moz-columns: 2;     
-}
-
-.multi-col-4 {
-  columns: 4;          
-  -webkit-columns: 4;  
-  -moz-columns: 4;     
-  list-style-position: inside; 
-  padding-left: 20px;  
-}
-
-.multi-col-2 {
-  columns: 2;          
-  -webkit-columns: 2;  
-  -moz-columns: 2;     
-  list-style-position: inside;
-  padding-left: 20px;  
-}
-
-@media (max-width: 768px) {
-  .multi-col-4 {
-    columns: 2;          
-    -webkit-columns: 2;  
-    -moz-columns: 2;     
+async function loadImages() {
+  if (!images) {
+    images = [];
+    // Load each JSON file and append results
+    for (const file of jsonFiles) {
+      const response = await fetch(file);
+      const data = await response.json();
+      images = images.concat(data);
+    }
   }
 }
-</style>
 
-# Principal Investigators
-<div class="pi-container">
-  <div class="pi-card">
-    <img src="{{ '/assets/images/richard_hornbeck_portrait.jpg' | relative_url }}" alt="Richard Hornbeck">
-    <a href="https://voices.uchicago.edu/richardhornbeck/" target="_blank">Richard Hornbeck</a>
-    <p>Professor of Economics</p>
-    <p>The University of Chicago Booth School of Business</p>
-  </div>
+document.getElementById("searchBox").addEventListener("input", async function(e) {
+  const query = e.target.value.toLowerCase().trim();
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
 
-  <div class="pi-card">
-    <img src="{{ '/assets/images/anders_humlum_portrait.webp' | relative_url }}" alt="Anders Humlum">
-    <a href="https://www.andershumlum.com/" target="_blank">Anders Humlum</a>
-    <p>Assistant Professor of Economics</p>
-    <p>The University of Chicago Booth School of Business</p>
-  </div>
+  if (query.length < 2) return; 
 
-  <div class="pi-card">
-    <img src="{{ '/assets/images/martin_rotemberg_portrait.jpeg' | relative_url }}" alt="Martin Rotemberg">
-    <a href="https://sites.google.com/view/mrotemberg/" target="_blank">Martin Rotemberg</a>
-    <p>Associate Professor of Economics</p>
-    <p>New York University</p>
-  </div>
-</div>
+  await loadImages(); // fetch JSONs once
 
-# Current Full-Time and Graduate Research Assistants
-- Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
-- Benjamin Lualdi (Economics PhD Student, Booth School of Business, University of Chicago)
+  // Split into individual words so "PA steel" works
+  const terms = query.split(/\s+/);
 
-# Former Full-Time and Graduate Research Assistants
-<ul class="multi-col-2">
-<li>Samuel Abers</li>
-<li>Shanon Hsuan-Ming Hsu</li>
-<li>Jiaxuan Lu</li>
-<li>Bo-Yu Chen</li> 
-<li>Vivian Li</li>  
-<li>Terence Chau</li>  
-<li>Ali Doxey</li>  
-<li>Natalie Yang</li>  
-<li>Will Cockriel</li>  
-<li>Julius Luettge</li>  
-<li>Andrea Cerrato</li>  
-</ul>
+  const matches = images.filter(img => {
+    const haystack = [
+      img.filename,
+      img.year,
+      img.state,
+      img.state_long,
+      img.industries
+    ].join(" ").toLowerCase();
 
-# Part-time Student Research Assistants
-<ul class="multi-col-4">
-  <li>Paul Wang</li>
-  <li>Tony Li</li>
-  <li>Uday Malik</li>
-  <li>Howard Li</li>
-  <li>Eric Zhu</li>
-  <li>Elliot Lin</li>
-  <li>Alexandra Zhou</li>
-  <li>Chenhao Yu</li>
-  <li>Cynthia Ji</li>
-  <li>David Kirchenbauer</li>
-  <li>Ding Ding</li>
-  <li>Eugenia Huang</li>
-  <li>Evelyn Nie</li>
-  <li>Jizhou Wang</li>
-  <li>Kuitai Wang</li>
-  <li>Leann Lee</li>
-  <li>Risa Takashima</li>
-  <li>Adrianna Nehme</li>
-  <li>Annie Liu</li>
-  <li>Astrid Ouyang</li>
-  <li>Cheresa Turek</li>
-  <li>Clara Ee</li>
-  <li>Jihee You</li>
-  <li>Joyce Wang</li>
-  <li>Kathy Yao</li>
-  <li>Mona Khairy</li>
-  <li>Nathan Unah</li>
-  <li>Neel Lahiri</li>
-  <li>Polly Ren</li>
-  <li>Scarlett Li</li>
-  <li>Tony Brooks</li>
-  <li>Yuerong Zhuang</li>
-</ul>
+    return terms.every(term => haystack.includes(term));
+  }).slice(0, 50);
 
-# Additional Support
-We thank the team at Digital Divide Data (DDD) for their tremendous effort with data entry.
+  if (matches.length === 0) {
+    resultsDiv.textContent = "No matches found.";
+    return;
+  }
 
-# Acknowledgments
-We gratefully acknowledge financial support from the following institutions:
-- Becker Friedman Institute
-- National Science Foundation
-- Initiative on Global Markets at the University of Chicago Booth School of Business
-- Neubauer Family Faculty Fellowship
-- NBER Innovation Policy grant program
+  matches.forEach(img => {
+    const link = document.createElement("a");
+    link.href = img.url;
+    link.textContent = img.filename;
+    link.target = "_blank";
+    link.style.display = "block";
+    link.style.marginBottom = "0.5em";
+    resultsDiv.appendChild(link);
+  });
+});
+</script>
