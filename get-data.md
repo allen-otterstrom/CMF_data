@@ -55,9 +55,9 @@ title: Get the Data
 # Additional Links
 
 <div class="button-grid">
-  <a class="button" href="additional-data.html">Additional Data</a>
-  <a class="button" href="search.html">Search CMF Images</a>
-  <a class="button" href="add-on.html" class="button">Contribute</a>
+  <a class="button" href="{{ '/additional-data' | relative_url }}">Additional Data</a>
+  <a class="button" href="{{ '/search' | relative_url }}">Search CMF Images</a>
+  <a class="button" href="{{ '/add-on' | relative_url }}" class="button">Contribute</a>
 </div>
 
 <script>
