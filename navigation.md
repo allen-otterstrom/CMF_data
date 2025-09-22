@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Census of Manufactures Image Navigation
+hide_back: true
 ---
 
 # Census of Manufactures Image Navigation
