@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Standardize 1880
+hide_back: true
 ---
 
 # Standardize 1880
@@ -14,4 +15,5 @@ For each of the 12 special schedules, the scripts extract relevant product or ma
 [code-step2](https://dl.dropboxusercontent.com/scl/fi/kr4seuvnv5d0w4vg6re5d/2_1880_ss_products.do?rlkey=h5o6935fd45mpb549r9us3ekh&dl=0)
 
 [code-step3](https://dl.dropboxusercontent.com/scl/fi/0f3rr7kpa1j6fywo2pwjg/3_merge_products_materials.do?rlkey=rnybxiwv6gccardus85ymowag&dl=0)
+
 
