@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Census of Manufactures Image Navigation
-next: /data-structure/
+next: /data-structure
 hide_back: true
 ---
 
