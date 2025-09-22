@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Coverage
+prev: /data-structure
+next: /faqs
 hide_back: true
 ---
 
@@ -157,6 +159,7 @@ At the time each census was completed, all manuscripts were gathered by the Cens
 </table>
 
 This table shows our coverage of counties. Percents indicate estimates of the share of establishments that we digitized, given the published county-level tabulations. In 1850, the Census records for three counties in California (Contra Costa, San Francisco, and Santa Clara) were lost and never tabulated, we have complete coverage of the remaining counties in California. Dashes indicate that no survey was conducted, checkmarks indicate that we have complete coverage.
+
 
 
 
