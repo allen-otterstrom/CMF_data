@@ -7,7 +7,7 @@ title: Image Search
 
 Type part of a file name, state, year, or industry (e.g., Pennsylvania Steel) to find an image.
 A list will appear below with links to the full-size scans.
-These correspond to the variables file_name, state, year, and ind_detailed respetively in the data.
+These correspond to the variables file_name, state, year, and ind_detailed respectively in the data.
 
 <input type="text" id="searchBox" placeholder="Search for an image..." style="width: 100%; padding: 0.6em; font-size: 1em; margin-top: 1em;">
 
