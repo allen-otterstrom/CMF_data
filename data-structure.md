@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Data Structure
+prev: /navigation/
+next: /coverage/
 hide_back: true
 ---
 
@@ -189,6 +191,7 @@ There are a number of unique variables in 1880 that have analogous variables or 
 There are 324 unique variables in the 1880 special schedules. The following .csv file shows the availability for each of those across each schedule.
 
 [1800 Special Schedule Variables](https://dl.dropboxusercontent.com/scl/fi/7er3p54tfud0iey2uk84d/ss_variables.csv?rlkey=mbivtyvf8rv8nkj1xtnd8y0f4&st=hc5drboe&dl=0)
+
 
 
 
