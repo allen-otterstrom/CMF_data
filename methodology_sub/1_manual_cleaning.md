@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Manual Checking
+hide_back: true
 ---
 
 # Manual Checking
@@ -81,4 +82,5 @@ The CMF data are very rich, but the irregularites present in original source are
        ```
      
      - RA's then went through and determined which of these duplicates to drop.
+
 
