@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FAQs
+hide_back: true
 ---
 
 # FAQs
