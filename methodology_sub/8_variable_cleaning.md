@@ -2,6 +2,7 @@
 layout: default
 title: Numeric Variable Cleaning
 prev: /methodology_sub/7_standardize_1880
+next: /methodology_sub/important_notes
 hide_back: true
 ---
 
@@ -18,6 +19,7 @@ This step of the pipeline simply attempts to ensure that the numeric variables f
 4. Apply mappings back to the CMF data. 
 
 [code](https://dl.dropboxusercontent.com/scl/fi/vqihjodz3vr1dbh6le1or/variable_cleaning.do?rlkey=3g2iy9hrsfw5mii00jzfw2dwe&dl=0)
+
 
 
 
