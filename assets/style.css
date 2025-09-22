@@ -151,17 +151,24 @@ select {
     max-width: 350px;
 }
 
-/* Back link */
-.back-link {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 1em;
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
 }
 
-.back-link:hover {
-    text-decoration: underline;
+/* Shared style for both buttons */
+.page-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1em;
 }
+
+.page-link:hover {
+  text-decoration: underline;
+}
+
 
 /* Tables */
 table {
