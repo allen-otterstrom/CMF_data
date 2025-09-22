@@ -85,20 +85,20 @@
 {% endif %}
 {% if page.url != "/" and page.url != "/index.html" and page.hide_back != true %}
   <div style="text-align: center; margin-top: 1em;">
-    <a class="back-link" href="#" onclick="if (document.referrer !== '') { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; } return false;">← Back</a>
+    <a class="page-link" href="#" onclick="if (document.referrer !== '') { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; } return false;">← Back</a>
   </div>
 {% endif %}
 
   {% if page.prev or page.next %}
   <div class="page-nav">
     {% if page.prev %}
-      <a href="{{ page.prev | relative_url }}">← Back</a>
+     <a class="page-link" href="{{ page.prev | relative_url }}">← Back</a>
     {% else %}
       <span></span>
     {% endif %}
 
     {% if page.next %}
-      <a href="{{ page.next | relative_url }}">Forward →</a>
+      <a class="page-link" href="{{ page.next | relative_url }}">Forward →</a>
     {% endif %}
   </div>
 {% endif %}
