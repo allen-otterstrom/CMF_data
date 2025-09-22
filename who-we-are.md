@@ -127,7 +127,6 @@ title: Who We Are
     <p>Harvard University</p>
   </div>
 
-  <div class="pi-container">
   <div class="pi-card">
     <img src="{{ '/assets/images/Ruveyda_portrait.jpg' | relative_url }}" alt="Ruveyda Nur Gozen">
     <a href="https://sites.google.com/view/ruveydagozen" target="_blank">Ruveyda Nur Gozen</a>
