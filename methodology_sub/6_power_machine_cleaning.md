@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Power and Machine Cleaning
+hide_back: true
 ---
 
 # Power Machine Cleaning
@@ -18,4 +19,5 @@ Once the power types are cleaned and classified, the process also extracts any i
 
 
  
+
 
