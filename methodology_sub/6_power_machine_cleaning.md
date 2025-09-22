@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Power and Machine Cleaning
+prev: /methodology_sub/5_industry_assignment
+next: /methodology_sub/7_standardize_1880
 hide_back: true
 ---
 
@@ -19,5 +21,6 @@ Once the power types are cleaned and classified, the process also extracts any i
 
 
  
+
 
 
