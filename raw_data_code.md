@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Additional Data
+title: Raw Data and Code
 ---
 
-# Additional Data
+# Raw Data and Code
 
 <div class="button-grid">
   <div class="button-item">
@@ -14,11 +14,6 @@ title: Additional Data
     <a class="button" href="/CMF_data/cleaning_files.zip" download>Cleaning Files</a>
     <div class="description">Scripts, code and crosswalks used to clean the data.</div>
   </div>
-  <div class="button-item">
-    <a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/ci_data.zip" download>County-Ind Data</a>
-    <div class="description">Transcribed and cleaned county-industry level data originally published by the Census Bureau.</div>
-  </div>
-</div>
 
 <style>
 .button-grid {
