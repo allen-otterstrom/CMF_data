@@ -1,6 +1,7 @@
 ---
 layout: default
 title: change-log
+prev: /methodology
 hide_back: true
 ---
 # Changelog
