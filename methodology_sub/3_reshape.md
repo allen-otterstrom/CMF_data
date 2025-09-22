@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Reshape
+prev: /methodology_sub/2_string_cleaning
+next: /methodology_sub/4_county_assignment
 hide_back: true
 ---
 
@@ -14,6 +16,7 @@ For each census year (1850, 1860, 1870, and 1880), the process involves cleaning
 [code-step1](https://dl.dropboxusercontent.com/scl/fi/ab9ls2qjrltr1bc4armfz/reshape1860-1870.do?rlkey=c39gr5ldnf3i1z4c6ztuvta21&dl=0)
 
 [code-step2](https://dl.dropboxusercontent.com/scl/fi/hfxbqh8oruu4trybajm1x/reshape1880.do?rlkey=01qsyqklggn8gg1m3ujfxhx8e&dl=0)
+
 
 
 
