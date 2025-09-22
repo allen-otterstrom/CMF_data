@@ -15,8 +15,3 @@ title: add-ons
 <p>
   -There are currently no additional data packages.
 </p>
-
-<h1 style="text-align:left;">Forthcoming</h1>
-<p>
-  Our team is currently in the process of linking establishments across decades.
-</p>
