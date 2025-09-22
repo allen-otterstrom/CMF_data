@@ -118,6 +118,22 @@ title: Who We Are
   </div>
 </div>
 
+# Collaborators
+<div class="pi-container">
+  <div class="pi-card">
+    <img src="{{ '/assets/images/shanon_portrait.jpeg' | relative_url }}" alt="Shanon Hsuan-Ming Hsu">
+    <a href="https://shanonhmhsu.com/" target="_blank">Shanon Hsuan-Ming Hsu</a>
+    <p>Visiting Scholar in Economics</p>
+    <p>Harvard University</p>
+  </div>
+
+  <div class="pi-container">
+  <div class="pi-card">
+    <img src="{{ '/assets/images/ruveyda_portrait.jpg' | relative_url }}" alt="Ruveyda Nur Gozen">
+    <a href="https://sites.google.com/view/ruveydagozen" target="_blank">Ruveyda Nur Gozen</a>
+    <p>Assistant Professor of Economics</p>
+    <p>Cardiff Business School</p>
+  </div>
 
 # Current Full-Time and Graduate Research Assistants
 - Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
@@ -126,7 +142,6 @@ title: Who We Are
 # Former Full-Time and Graduate Research Assistants
 <ul class="multi-col-2">
 <li>Samuel Abers</li>
-<li>Shanon Hsuan-Ming Hsu</li>
 <li>Jiaxuan Lu</li>
 <li>Bo-Yu Chen</li> 
 <li>Vivian Li</li>  
