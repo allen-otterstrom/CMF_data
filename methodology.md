@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Methodology
+prev: /faqs
+next: /change-log
 hide_back: true
 ---
 
@@ -64,4 +66,5 @@ In addition to these manual steps, many algorithmic and other cleaning steps per
 6. [Power and Machine Cleaning]({{ '/methodology_sub/6_power_machine_cleaning' | relative_url }})
 7. [Standardize 1880]({{ '/methodology_sub/7_standardize_1880' | relative_url }})
 8. [Numeric Variable Cleaning]({{ '/methodology_sub/8_variable_cleaning' | relative_url }})
+
 
