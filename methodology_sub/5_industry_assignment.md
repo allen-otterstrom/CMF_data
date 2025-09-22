@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Industry Classification
+hide_back: true
 ---
 # Industry Classification
 
@@ -17,4 +18,5 @@ The process begins by cleaning raw industry labels and matching them to cleaned 
 [code-support1](https://dl.dropboxusercontent.com/scl/fi/roaacaisowhgxg6xmp5ig/industry_raw_clean.do?rlkey=u4g8kwezsitvv428c57ftwupl&dl=0)
 
 [code-support2](https://dl.dropboxusercontent.com/scl/fi/opjct87bnralezpn19r9n/infer_industry_classification.do?rlkey=z4tjtkj1dvpxql65venrblv0c&dl=0)
+
 
