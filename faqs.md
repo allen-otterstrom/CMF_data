@@ -1,6 +1,8 @@
 ---
 layout: default
 title: FAQs
+prev: /coverage
+next: /methodology
 hide_back: true
 ---
 
