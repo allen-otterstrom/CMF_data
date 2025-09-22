@@ -134,6 +134,7 @@ title: Who We Are
     <p>Assistant Professor of Economics</p>
     <p>Cardiff Business School</p>
   </div>
+</div>
 
 # Current Full-Time and Graduate Research Assistants
 - Allen Otterstrom (Research Professional, Booth School of Business, University of Chicago)
