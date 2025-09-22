@@ -55,7 +55,8 @@ title: Get the Data
 # Additional Links
 
 <div class="button-grid">
-  <a class="button" href="{{ '/additional-data' | relative_url }}">Additional Data</a>
+  <a class="button" href="{{ '/raw_data_code' | relative_url }}">Raw Data and Code</a>
+  <a class="button" href="{{ '/count-ind-tab' | relative_url }}">Raw Data and Code</a>
   <a class="button" href="{{ '/search' | relative_url }}">Search CMF Images</a>
   <a class="button" href="{{ '/add-on' | relative_url }}" class="button">Contribute</a>
 </div>
