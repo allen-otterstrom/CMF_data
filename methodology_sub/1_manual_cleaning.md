@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Manual Checking
+next: /methodology_sub/2_string_cleaning
 hide_back: true
 ---
 
@@ -82,5 +83,6 @@ The CMF data are very rich, but the irregularites present in original source are
        ```
      
      - RA's then went through and determined which of these duplicates to drop.
+
 
 
