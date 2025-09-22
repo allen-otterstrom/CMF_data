@@ -1,6 +1,7 @@
 ---
 layout: default
 title: change-log
+hide_back: true
 ---
 # Changelog
 
