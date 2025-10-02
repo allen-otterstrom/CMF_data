@@ -12,7 +12,7 @@ The county-industry data report many industries in each decade, with some small 
 
 <div class="button-grid">
   <div class="button-item">
-    <a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/ci_data.zip" download>County-Industry</a>
+    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/ci_data.zip" download>County-Industry</a>
     <div class="description">Download the county-industry tabulations for all years</div>
 
 <style>
