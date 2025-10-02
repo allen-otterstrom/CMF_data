@@ -8,23 +8,23 @@ title: Get the Data
 <label for="data-dropdown"><strong>Select Year / Schedule:</strong></label>
 <select id="data-dropdown" onchange="updateSelectedFile(this.value)">
   <option value="">-- Choose a file --</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/all_data.zip">All Data</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1850.csv">1850</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1860.csv">1860</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1870.csv">1870</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_general_schedule.csv">1880 General Schedule</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss1.csv">1880 Special Schedule 1</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss2.csv">1880 Special Schedule 2</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss3.csv">1880 Special Schedule 3</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss4.csv">1880 Special Schedule 4</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss5.csv">1880 Special Schedule 5</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss6.csv">1880 Special Schedule 6</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss7.csv">1880 Special Schedule 7</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss8.csv">1880 Special Schedule 8</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss9.csv">1880 Special Schedule 9</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss10.csv">1880 Special Schedule 10</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss11.csv">1880 Special Schedule 11</option>
-  <option value="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/cmf_1880_ss12.csv">1880 Special Schedule 12</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/all_data.zip">All Data</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1850.csv">1850</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1860.csv">1860</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1870.csv">1870</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_general_schedule.csv">1880 General Schedule</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss1.csv">1880 Special Schedule 1</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss2.csv">1880 Special Schedule 2</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss3.csv">1880 Special Schedule 3</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss4.csv">1880 Special Schedule 4</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss5.csv">1880 Special Schedule 5</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss6.csv">1880 Special Schedule 6</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss7.csv">1880 Special Schedule 7</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss8.csv">1880 Special Schedule 8</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss9.csv">1880 Special Schedule 9</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss10.csv">1880 Special Schedule 10</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss11.csv">1880 Special Schedule 11</option>
+  <option value="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/cmf_1880_ss12.csv">1880 Special Schedule 12</option>
 </select>
 
 <span id="selected-file" style="margin-left: 15px; font-weight: bold; font-size: 1.2em;">No file selected</span>
@@ -32,7 +32,7 @@ title: Get the Data
 <a id="download-button" class="button" href="#" style="pointer-events: none; opacity: 0.5;">Download Selected File</a>
 
 <br><br>
-<a class="button" href="https://pub-cefce323449a4829a6786170686f724a.r2.dev/website_materials/codebook.xlsx" download>Download Codebook</a>
+<a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/codebook.xlsx" download>Download Codebook</a>
 
 # Example Images
 
