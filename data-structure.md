@@ -190,8 +190,30 @@ There are a number of unique variables in 1880 that have analogous variables or 
 
 There are 324 unique variables in the 1880 special schedules. The following .csv file shows the availability for each of those across each schedule.
 
-[1800 Special Schedule Variables](https://dl.dropboxusercontent.com/scl/fi/7er3p54tfud0iey2uk84d/ss_variables.csv?rlkey=mbivtyvf8rv8nkj1xtnd8y0f4&st=hc5drboe&dl=0)
+<div class="button-grid">
+  <div class="button-item">
+    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/ss_variables.csv" download>Raw Data</a>
+    <div class="description">Browse the Special Schedule Variables.</div>
+  </div>
+  </div>
 
+<style>
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1em; /* space between rows */
+}
+
+.button-item {
+  display: flex;
+  align-items: center;
+  gap: 1em; /* space between button and description */
+}
+
+.description {
+  font-size: 0.95em;
+  color: #333;
+}
 
 
 
