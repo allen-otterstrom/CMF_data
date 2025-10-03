@@ -9,7 +9,9 @@ hide_back: true
 
 This section describes the structure of a CMF manuscript. This is done using the 1850 manuscript, but is similar for the 1860, 1870, and 1880 General Schedule manuscripts. Here is the entire example image:
 
-![1850 Example](https://dl.dropboxusercontent.com/scl/fi/x6tilfuwbz11z3eettcs2/1850_CMF.jpg?rlkey=602asjcepx41hfxazqszl87oe&st=7kpqlbu9&dl=0)
+<div>
+  <img src="{{ '/assets/images/1850_NAV.png' | relative_url }}" alt="1850 Navigation">
+</div>
 
 The very top contains information about the location of the establishments listed, including State, County and Township.
 
@@ -31,7 +33,9 @@ Below this, each establishment's information was recorded in rows and in columns
 
 This is the basic format of the 1850-1880 general schedule manuscripts. The special schedule manuscripts differ in their format. The following example is of special schedules 3 and 4, boots/shoes and leather.
 
-![1880_ss34_CMF_bootsleather](https://dl.dropboxusercontent.com/scl/fi/f1klns47hw84xnx2egqal/1880_ss34_CMF_bootsleather.jpg?rlkey=7vdza8v1teccubk4c4h78lpz2&st=n28p8qon&dl=0)
+<div>
+  <img src="{{ '/assets/images/1880_NAV.png' | relative_url }}" alt="1880 Navigation">
+</div>
 
 At the very top of the manuscript it is stated which special schedules it includes.
 
