@@ -12,9 +12,10 @@ This step of the data pipeline focuses on assigning standardized county informat
 
 The process is divided into two major parts. First, the county names are extracted from the file names or manually collected metadata, cleaned, and cross-checked with curated correction files. Where needed, unmatched or ambiguous entries are flagged for manual review. Once a clean set of county assignments is established, the second part of the process links those counties to their corresponding historical FIPS codes using a specially created crosswalk. This ensures consistent county identifiers across all years of the Census of Manufactures. The final output is a set of county-assigned datasets, one for each year and schedule (where applicable).
 
-[code-step1](https://dl.dropboxusercontent.com/scl/fi/a24wclvba9nkcc74o1ngu/1_county_assignment.do?rlkey=dyj7e43yzxmbjcu24mgmfooe0&dl=0)
+[code-step1](https://dl.dropboxusercontent.com/scl/fi/7axe8o5sfvjxx6mv5zokv/1_county_assignment.do?rlkey=3dyoqwe7d4bm72se3usqhgvhb&dl=0)
 
-[code-step2](https://dl.dropboxusercontent.com/scl/fi/859h42q04cjimpbdvak9k/2_merge_fips.do?rlkey=t2iux4pxvjdm8ah5zg9h1p2rg&dl=0)
+[code-step2](https://dl.dropboxusercontent.com/scl/fi/xlu0x7oz9kqb5h118upky/2_merge_fips.do?rlkey=enivs80c2yanancz7yqqgophc&dl=0)
+
 
 
 
