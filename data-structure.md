@@ -46,6 +46,8 @@ In the following variable availability tables, checks indicate that the variable
 
 #### Manuscript Variables
 
+The following table lists out variables original to the manuscripts, and their availability by year. Since there are many manuscript variables unique to 1880, those are ommitted in this table.
+
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
@@ -85,9 +87,10 @@ In the following variable availability tables, checks indicate that the variable
   </tbody>
 </table>
 
-The above table lists out variables original to the manuscripts, and their availability by year. Since there are many manuscript variables unique to 1880, those are ommitted in this table.
 
 #### Constructed Variables
+
+The following table lists out the constructed variables available in the prepared data. An important note is that there are no 1880 general schedule constructed variables that are unique.
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
@@ -139,10 +142,9 @@ The above table lists out variables original to the manuscripts, and their avail
   </tbody>
 </table>
 
-
-The above table lists out the constructed variables available in the prepared data. An important note is that there are no 1880 general schedule constructed variables that are unique.
-
 #### Unique 1880 General Schedule variables
+
+There are a number of unique variables in 1880 that have analogous variables or are constructable in other years.
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
@@ -183,12 +185,9 @@ The above table lists out the constructed variables available in the prepared da
   </tbody>
 </table>
 
-
-There are a number of unique variables in 1880 that have analogous variables or are constructable in other years.
-
 #### 1880 Special Schedule Variables
 
-There are 324 unique variables in the 1880 special schedules. The following .csv file shows the availability for each of those across each schedule.
+There are 324 unique variables in the 1880 special schedules. The following file shows the availability for each of those across each schedule.
 
 <div class="button-grid">
   <div class="button-item">
@@ -214,6 +213,7 @@ There are 324 unique variables in the 1880 special schedules. The following .csv
   font-size: 0.95em;
   color: #333;
 }
+
 
 
 
