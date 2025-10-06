@@ -19,7 +19,7 @@ The very top contains information about the location of the establishments liste
   <img src="{{ '/assets/images/nav_1.png' | relative_url }}" alt="Nav 1">
 </div>
 
-The next section contains column headers that describe the various pieces of information that the Census Marshal obtained from the establishment. These are the source of the original variables available in the Census of Manufacturer's microdata.
+The next section contains column headers that describe the various pieces of information that the census marshal obtained from the establishment. These are the source of the original variables available in the Census of Manufactures microdata.
 
 <div>
   <img src="{{ '/assets/images/nav_2.png' | relative_url }}" alt="Nav 2">
@@ -31,7 +31,7 @@ Below this, each establishment's information was recorded in rows and in columns
   <img src="{{ '/assets/images/nav_3.png' | relative_url }}" alt="Nav 3">
 </div>
 
-This is the basic format of the 1850-1880 general schedule manuscripts. The special schedule manuscripts differ in their format. The following example is of special schedules 3 and 4, boots/shoes and leather.
+This is the basic format of the 1850-1880 general schedule manuscripts. The special schedule manuscripts differ in format. The following example is of special schedules 3 and 4, boots/shoes and leather.
 
 <div>
   <img src="{{ '/assets/images/1880_NAV.jpg' | relative_url }}" alt="1880 Navigation">
@@ -43,13 +43,13 @@ At the very top of the manuscript it is stated which special schedules it includ
   <img src="{{ '/assets/images/nav_4.png' | relative_url }}" alt="Nav 4">
 </div>
 
-Right under, the location of the establishments included on the manuscript is recorded.
+Directly under, the location of the establishments included on the manuscript is recorded.
 
 <div>
   <img src="{{ '/assets/images/nav_5.png' | relative_url }}" alt="Nav 5">
 </div>
 
-There are two sections on the manuscripts for special schedules 3-12. Here we have Boots and Shoes and Leather.
+There are two schedules and two sections for each schedule on each manuscript for special schedules 3-12. Here we have 1) Boots and Shoes and 2) Leather.
 
 <div>
   <img src="{{ '/assets/images/nav_6.png' | relative_url }}" alt="Nav 6">
