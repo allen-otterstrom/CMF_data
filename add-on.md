@@ -13,5 +13,5 @@ title: add-ons
 
 <h1 style="text-align:left;">Data Add-ons</h1>
 <p>
-  -There are currently no additional data packages.
+  There are currently no additional data packages.
 </p>
