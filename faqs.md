@@ -20,5 +20,5 @@ The United States conducted a Census of Manufactures from 1850–1880, sending e
 
 <details>
   <summary><strong>Is it possible to link establishments over time?</strong></summary>
-  Yes, we think it is possible to link establishments over time, based on their name, location, and activity. We are currently in the process of creating a panel
+  Yes, we think it is possible to link establishments over time, based on their name, location, and activity. We are currently in the process of creating a panel.
 </details>
