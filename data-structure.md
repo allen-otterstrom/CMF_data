@@ -191,7 +191,7 @@ There are 324 unique variables in the 1880 special schedules. The following file
 
 <div class="button-grid">
   <div class="button-item">
-    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/ss_variables.csv" download>Raw Data</a>
+    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/ss_variables.csv" download>Special Schedule Variables</a>
     <div class="description">Browse the Special Schedule Variables.</div>
   </div>
   </div>
@@ -213,6 +213,7 @@ There are 324 unique variables in the 1880 special schedules. The following file
   font-size: 0.95em;
   color: #333;
 }
+
 
 
 
