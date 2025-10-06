@@ -5,6 +5,8 @@ title: Get the Data
 
 # Download the Data
 
+Select a year you would like. You will then be able to download the data.
+
 <label for="data-dropdown"><strong>Select Year / Schedule:</strong></label>
 <select id="data-dropdown" onchange="updateSelectedFile(this.value)">
   <option value="">-- Choose a file --</option>
