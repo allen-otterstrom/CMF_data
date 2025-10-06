@@ -30,11 +30,11 @@ Below is a modern state-boundary map showing which states have **complete covera
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/data-structure' | relative_url }}" class="button">Prepared CMF Data Structure</a>
-    <span>Available Variables, Explanation of Differences by Year</span>
+    <span>Available variables, explanation of differences by year</span>
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/coverage' | relative_url }}" class="button">Coverage</a>
-    <span>Detailed discussion of dataset coverage over time, including special schedules and differences from the Published CMF tabulations.</span>
+    <span>Detailed discussion of dataset coverage over time, including special schedules and differences from the published CMF tabulations.</span>
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/faqs' | relative_url }}" class="button">FAQs</a>
@@ -42,7 +42,7 @@ Below is a modern state-boundary map showing which states have **complete covera
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/methodology' | relative_url }}" class="button">Methodology</a>
-    <span>Full cleaning and preparation procedures, including subpages for each processing step.</span>
+    <span>Cleaning and preparation procedures, including subpages for each processing step.</span>
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/change-log' | relative_url }}" class="button">Change Log</a>
