@@ -19,7 +19,7 @@ Click the following link to download a PDF of the complete set of documentation 
 </div>
 
 ## Coverage Map
-Below is a modern state-boundary map showing which states have **complete coverage**, **partial coverage**, or **no coverage** in the CMF dat, as compared to the published county-industry tabulations.
+Below is a modern state-boundary map showing which states have **complete coverage**, **partial coverage**, or **no coverage** in the CMF data, as compared to the published county-industry tabulations.
 ![Coverage Map]({{ '/assets/images/simple_coverage_map.png' | relative_url }})
 
 ## Related Pages
