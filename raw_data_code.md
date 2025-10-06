@@ -12,7 +12,7 @@ title: Raw Data and Code
   </div>
   <div class="button-item">
     <a class="button" href="/CMF_data/cleaning_files.zip" download>Cleaning Files</a>
-    <div class="description">Scripts, code and crosswalks used to clean the data.</div>
+    <div class="description">Download scripts, code and crosswalks used to clean the data.</div>
   </div>
 
 <style>
