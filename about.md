@@ -42,7 +42,7 @@ Below is a modern state-boundary map showing which states have **complete covera
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/methodology' | relative_url }}" class="button">Methodology</a>
-    <span>Cleaning and preparation procedures, including subpages for each processing step.</span>
+    <span>Cleaning and preparation procedures, including sub-pages for each processing step.</span>
   </div>
   <div style="display: flex; align-items: center; gap: 1em;">
     <a href="{{ '/change-log' | relative_url }}" class="button">Change Log</a>
