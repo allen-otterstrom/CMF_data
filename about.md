@@ -9,6 +9,7 @@ The resulting datasets enable researchers to analyze industrial change, geograph
 - Compare establishment-level and county-level economic patterns.
 - Study the effects of transportation, energy, and policy on industrial growth.
 - Link micro-level CMF records to other historical datasets.
+  
 Click the following link to download a PDF of the complete set of documentation for this project:
 
 <div style="text-align: center; margin-top: 1em;">
