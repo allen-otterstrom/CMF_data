@@ -13,13 +13,14 @@ The process begins by cleaning raw industry labels and matching them to cleaned 
 
 
 
-[code-step1](https://dl.dropboxusercontent.com/scl/fi/uird86x1wyzwitkiswbu9/1_industry_assignment.do?rlkey=xjvg9f5zkapj7p0vblk98b96q&dl=0)
+[code-step1](https://dl.dropboxusercontent.com/scl/fi/z3zxs9hpqpmeub1gok6qv/1_industry_assignment.do?rlkey=8cgvph413b3pv5y4ff81mktaq&dl=0)
 
-[code-step2](https://dl.dropboxusercontent.com/scl/fi/6or4m4rwzdhfp6u7iei3e/2_add_hand_crosswalk.do?rlkey=124u5v3mkuzniq64p65oyfz2s&dl=0)
+[code-step2](https://dl.dropboxusercontent.com/scl/fi/btu41y2gmnqejraoyghb9/2_add_hand_crosswalk.do?rlkey=rbjmdik0vrzhk5ou87wajjebn&dl=0)
 
-[code-support1](https://dl.dropboxusercontent.com/scl/fi/roaacaisowhgxg6xmp5ig/industry_raw_clean.do?rlkey=u4g8kwezsitvv428c57ftwupl&dl=0)
+[code-support1](https://dl.dropboxusercontent.com/scl/fi/gvi9o5bsb2ytqicqsik2o/industry_raw_clean.do?rlkey=fk1scifceo026l4d3acrsoa4p&dl=0)
 
-[code-support2](https://dl.dropboxusercontent.com/scl/fi/opjct87bnralezpn19r9n/infer_industry_classification.do?rlkey=z4tjtkj1dvpxql65venrblv0c&dl=0)
+[code-support2](https://dl.dropboxusercontent.com/scl/fi/yz61054niv0hrm5keld7h/infer_industry_classification.do?rlkey=3tbvpsfkyjkuquiw6tzk8cqv1&dl=0)
+
 
 
 
