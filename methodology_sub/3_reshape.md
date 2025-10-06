@@ -13,9 +13,10 @@ This step in the pipeline ensures that each manufacturing establishment in the h
 
 For each census year (1850, 1860, 1870, and 1880), the process involves cleaning up duplicate entries, separating less-repeated variables to improve performance, and then restructuring the data so each firm is represented once. The 1880 data, which includes both general and special schedules with more variation in content, required custom approaches for each type of form. After reshaping, missing or empty columns are removed, and final outputs are saved in a clean, consistent format. These reshaped datasets provide a streamlined foundation for establishment-level research and statistical work.
 
-[code-step1](https://dl.dropboxusercontent.com/scl/fi/ab9ls2qjrltr1bc4armfz/reshape1860-1870.do?rlkey=c39gr5ldnf3i1z4c6ztuvta21&dl=0)
+[code-step1]([https://dl.dropboxusercontent.com/scl/fi/orbmto98g59l1hn48bs1b/reshape1850](https://dl.dropboxusercontent.com/scl/fi/orbmto98g59l1hn48bs1b/reshape1850-1870.do?rlkey=wnq8h2n7zzh51s1txi0de0av2&dl=0))
 
-[code-step2](https://dl.dropboxusercontent.com/scl/fi/hfxbqh8oruu4trybajm1x/reshape1880.do?rlkey=01qsyqklggn8gg1m3ujfxhx8e&dl=0)
+[code-step2](https://dl.dropboxusercontent.com/scl/fi/bmemyxfqzt47i2dkrmv0e/reshape1880.do?rlkey=spmbq99d83lio43j9h8r71lnj&dl=0)
+
 
 
 
