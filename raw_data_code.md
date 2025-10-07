@@ -14,6 +14,10 @@ title: Raw Data and Code
     <a class="button" href="/CMF_data/cleaning_files.zip" download>Cleaning Files</a>
     <div class="description">Download scripts, code and crosswalks used to clean the data.</div>
   </div>
+  <div class="button-item">
+    <a class="button" href="/CMF_data/cleaning_files.zip" download>Input Files</a>
+    <div class="description">Download the input files to the CMF pipeline replication.</div>
+  </div>
 
 <style>
 .button-grid {
