@@ -89,6 +89,7 @@ The following table lists out variables original to the manuscripts, and their a
 </table>
 
 
+
 #### Constructed Variables
 
 The following table lists out the constructed variables available in the prepared data. An important note is that there are no 1880 general schedule constructed variables that are unique.
@@ -214,6 +215,7 @@ There are 324 unique variables in the 1880 special schedules. The following file
   font-size: 0.95em;
   color: #333;
 }
+
 
 
 
