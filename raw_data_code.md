@@ -11,11 +11,11 @@ title: Raw Data and Code
     <div class="description">Download the raw transcriptions of the CMF manuscripts.</div>
   </div>
   <div class="button-item">
-    <a class="button" href="/CMF_data/cleaning_files.zip" download>Cleaning Files</a>
+    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/pipeline.zip" download>Cleaning Files</a>
     <div class="description">Download scripts, code and crosswalks used to clean the data.</div>
   </div>
   <div class="button-item">
-    <a class="button" href="/CMF_data/cleaning_files.zip" download>Input Files</a>
+    <a class="button" href="https://pub-9228e653a45040598db0c86ec1d93b3c.r2.dev/website_materials/input.zip" download>Input Files</a>
     <div class="description">Download the input files to the CMF pipeline replication.</div>
   </div>
 
