@@ -83,6 +83,7 @@ The following table lists out variables original to the manuscripts, and their a
     <tr><td>Horsepower Measure</td><td>-</td><td>-</td><td>✓</td><td>★</td></tr>
     <tr><td>State</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
     <tr><td>County</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Township</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
     <tr><td>Closest Post Office</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
   </tbody>
 </table>
@@ -213,6 +214,7 @@ There are 324 unique variables in the 1880 special schedules. The following file
   font-size: 0.95em;
   color: #333;
 }
+
 
 
 
