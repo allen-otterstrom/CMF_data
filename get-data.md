@@ -41,17 +41,17 @@ Select a year you would like. You will then be able to download the data.
 <label for="images-dropdown"><strong>Select Image:</strong></label>
 <select id="images-dropdown" onchange="openImageModal(this.value, this.options[this.selectedIndex].text)">
   <option value="">-- Choose an image --</option>
-  <option value="{{ '/CMF_data/assets/images/1850_CMF.jpg' | relative_url }}">1850 Manuscript Image</option>
-  <option value="{{ '/CMF_data/assets/images/1860_CMF.jpg' | relative_url }}">1860 Manuscript Image</option>
-  <option value="{{ '/CMF_data/assets/images/1870_CMF.jpeg' | relative_url }}">1870 Manuscript Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_gss_CMF.jpg' | relative_url }}">1880 General Schedule Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss1_CMF_agimp.jpg' | relative_url }}">1880 Special Schedule 1 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss2_CMF_paper.jpg' | relative_url }}">1880 Special Schedule 2 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss34_CMF_bootsleather.jpg' | relative_url }}">1880 Special Schedules 3 & 4 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss56_CMF_lumberbrick.jpg' | relative_url }}">1880 Special Schedules 5 & 6 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss78_CMF_flourcheese.jpg' | relative_url }}">1880 Special Schedules 7 & 8 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss910_CMF_meatsalt.jpg' | relative_url }}">1880 Special Schedules 9 & 10 Image</option>
-  <option value="{{ '/CMF_data/assets/images/1880_ss1112_CMF_coalquarry.jpg' | relative_url }}">1880 Special Schedule 11 & 12 Image</option>
+  <option value="{{ '/assets/images/1850_CMF.jpg' | relative_url }}">1850 Manuscript Image</option>
+  <option value="{{ '/assets/images/1860_CMF.jpg' | relative_url }}">1860 Manuscript Image</option>
+  <option value="{{ '/assets/images/1870_CMF.jpeg' | relative_url }}">1870 Manuscript Image</option>
+  <option value="{{ '/assets/images/1880_gss_CMF.jpg' | relative_url }}">1880 General Schedule Image</option>
+  <option value="{{ '/assets/images/1880_ss1_CMF_agimp.jpg' | relative_url }}">1880 Special Schedule 1 Image</option>
+  <option value="{{ '/assets/images/1880_ss2_CMF_paper.jpg' | relative_url }}">1880 Special Schedule 2 Image</option>
+  <option value="{{ '/assets/images/1880_ss34_CMF_bootsleather.jpg' | relative_url }}">1880 Special Schedules 3 & 4 Image</option>
+  <option value="{{ '/assets/images/1880_ss56_CMF_lumberbrick.jpg' | relative_url }}">1880 Special Schedules 5 & 6 Image</option>
+  <option value="{{ '/assets/images/1880_ss78_CMF_flourcheese.jpg' | relative_url }}">1880 Special Schedules 7 & 8 Image</option>
+  <option value="{{ '/assets/images/1880_ss910_CMF_meatsalt.jpg' | relative_url }}">1880 Special Schedules 9 & 10 Image</option>
+  <option value="{{ '/assets/images/1880_ss1112_CMF_coalquarry.jpg' | relative_url }}">1880 Special Schedule 11 & 12 Image</option>
 </select>
 
 # Additional Links
